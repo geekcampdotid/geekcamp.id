@@ -1,0 +1,50 @@
+ul#menu
+ li: a href="#event" Event
+ /li: a href="#speakers" Speakers
+ li: a href="#location" Location
+ li: a href="#organizer" Organizer
+ li: a href="#sponsors" Sponsors
+ li: a href="#media-partners" Media Partners
+
+#event
+  .logo
+    = image_tag 'geekcamp.png', class: 'logo__image'
+    .logo__caption The Biggest Tech-Savvy Conference in Indonesia
+
+  .headline One Day Event&ensp;&middot;&ensp;30+ Speakers&ensp;&middot;&ensp;3 Topic Areas (Technology, UI/UX, Entrepreneurship)
+
+  .date-time October 24, 2015
+
+  .links
+  	= link_to 'Get Your Ticket', 'http://gc15.eventbrite.com', class: 'button', target: "_blank"
+  	| &emsp;
+  	= link_to 'Call for Speaker', 'http://goo.gl/forms/jSL8u8aUt8', class: 'button', target: "_blank"
+
+  .spike
+
+#schedule
+#speakers
+#location
+  .header Location
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2722459804145!2d106.79708719999998!3d-6.227792599999991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f6b449568329%3A0x492ec0c8279461c6!2sSCTV!5e0!3m2!1sen!2sid!4v1440813114024" width="100%" height="450" frameborder="0" style="border:0;pointer-events:none;" allowfullscreen></iframe>
+
+#organizer
+  .header Organized by
+  = image_tag 'kmklabs.png'
+  br
+  br
+  br
+  br
+
+#sponsors
+  .header Sponsored by
+  = image_tag 'suitmedia.png'
+
+
+#media-partners
+  .header Media Partner
+  = image_tag 'liputan6.png', style: 'width: 250px; position: relative; top: -45px;'
+  | &emsp;
+  = image_tag 'dailysocial.png', style: 'width: 250px;'
+
+#footer &copy; Copyright 2015 by GeekCamp&ensp;|&ensp;All Rights Reserved. 

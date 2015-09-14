@@ -173,11 +173,6 @@ html, body {
   position: relative;
   top: 100px;
   margin-bottom: 50px;
-
-  img {
-    position: relative;
-    top: -25px;
-  }
 }
 
 #footer, #sponsors {
@@ -227,4 +222,23 @@ html, body {
 .speaker__name {
   font-size: 14px;
   font-weight: bold;
+}
+
+.media-partner {
+  margin-bottom: 50px;
+}
+
+.media-partner__logo  {
+  vertical-align: middle;
+}
+
+.col-2 {
+  width: 50%;
+  font-size: 0;
+  display: inline-block;
+}
+
+.section {
+  margin: 0 auto;
+  width: 800px;
 }

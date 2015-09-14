@@ -8,7 +8,7 @@ ul#menu
 
 #event
   .logo
-    = image_tag 'geekcamp.png', class: 'logo__image'
+    = image_tag 'logo/geekcamp.png', class: 'logo__image'
     .logo__caption The Biggest Tech-Savvy Conference in Indonesia
 
   .headline One Day Event&ensp;&middot;&ensp;30+ Speakers&ensp;&middot;&ensp;3 Topic Areas (Technology, UI/UX, Entrepreneurship)
@@ -100,7 +100,7 @@ ul#menu
 #organizer
   .header Organized by
   = link_to 'http://kmklabs.com', target: '_blank'
-    = image_tag 'kmklabs.png'
+    = image_tag 'logo/kmklabs.png'
   br
   br
   br
@@ -136,23 +136,19 @@ ul#menu
     = image_tag 'logo/geekhunter.png', style: 'vertical-align: middle;'
 
 
-#media-partners
-  .header Media Partner
-  = link_to 'http://liputan6.com', target: '_blank'
-    = image_tag 'liputan6.png', style: 'width: 250px; vertical-align: middle;'
-  | &emsp;
-  = link_to 'http://dailysocial.net', target: '_blank'
-    = image_tag 'dailysocial.png', style: 'width: 250px; vertical-align: middle'
-  br
-  br
-  = link_to 'http://id.techinasia.com', target: '_blank'
-    = image_tag 'logo/techinasia.png', style: 'vertical-align: middle'
-  | &emsp;&emsp;
-  = link_to 'http://vidio.com', target: '_blank'
-    = image_tag 'logo/vidio.png', style: 'vertical-align: middle; width: 180px;'
+section.section#media-partners
+  header.header Media Partner
+  .grid
+    = link_to 'http://liputan6.com', target: '_blank', class: 'media-partner col-2'
+      = image_tag 'logo/liputan6.png', class: 'media-partner__logo'
 
-  br
-  br
-  br
+    = link_to 'http://dailysocial.net', target: '_blank', class: 'media-partner col-2'
+      = image_tag 'logo/dailysocial.png', class: 'media-partner__logo'
+
+    = link_to 'http://id.techinasia.com', target: '_blank', class: 'media-partner col-2'
+      = image_tag 'logo/techinasia.png', class: 'media-partner__logo'
+
+    = link_to 'http://vidio.com', target: '_blank', class: 'media-partner col-2'
+      = image_tag 'logo/vidio.png', class: 'media-partner__logo'
 
 #footer &copy; Copyright 2015 by GeekCamp&ensp;|&ensp;All Rights Reserved.

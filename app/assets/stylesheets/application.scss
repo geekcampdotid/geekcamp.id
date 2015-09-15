@@ -276,3 +276,26 @@ html, body {
   font-weight: normal;
   font-style: oblique;
 }
+.speaker-topic__image--more {
+  background-color: #EBF1F1;
+  position: relative;
+
+  &:after {
+    color: #D5E2E2;
+    display: block;
+    content: "+";
+    font-size: 48px;
+    position: absolute;
+    top: 0;
+    left: 11px;
+    line-height: 48px;
+  }
+}
+.speaker-topic__name--more {
+  color: #999;
+  font-size: 14px;
+  font-style: oblique;
+  position: relative;
+  top: 10px;
+}
+

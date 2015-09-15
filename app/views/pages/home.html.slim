@@ -97,43 +97,26 @@ ul#menu
   .header Location
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2722459804145!2d106.79708719999998!3d-6.227792599999991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f6b449568329%3A0x492ec0c8279461c6!2sSCTV!5e0!3m2!1sen!2sid!4v1440813114024" width="100%" height="450" frameborder="0" style="border:0;pointer-events:none;" allowfullscreen></iframe>
 
-#organizer
-  .header Organized by
-  = link_to 'http://kmklabs.com', target: '_blank'
-    = image_tag 'logo/kmklabs.png', alt: 'KMKLabs'
-  br
-  br
-  br
-  br
+section.section#organizer
+  header.header Organized by
+  .grid
+    = link_to 'http://kmklabs.com', target: '_blank', class: 'media-partner col-2'
+      = image_tag 'logo/kmklabs.png', alt: 'KMKLabs', class: 'media-partner__logo'
 
-#sponsors
-  .header Sponsored by
+section.section#sponsors
+  header.header Sponsored by
+  .grid
+    = link_to 'http://bukalapak.com', target: '_blank', class: 'media-partner col-2'
+      = image_tag 'logo/bukalapak.png', alt: 'Bukalapak', class: 'media-partner__logo'
 
-  h2 Gold Sponsors
-  br
+    = link_to 'http://suitmedia.com', target: '_blank', class: 'media-partner col-2'
+      = image_tag 'logo/suitmedia.png', alt: 'Suitmedia', class: 'media-partner__logo'
 
-  = link_to 'http://bukalapak.com', target: '_blank'
-    = image_tag 'logo/bukalapak.png', alt: 'Bukalapak'
+    = link_to 'http://www.cookpad.com', target: '_blank', class: 'media-partner col-2'
+      = image_tag 'logo/cookpad.png', alt: 'Cookpad', class: 'media-partner__logo'
 
-  br
-  br
-  br
-  h2 Silver Sponsors
-  br
-
-  = link_to 'http://suitmedia.com', target: '_blank'
-    = image_tag 'logo/suitmedia.png', alt: 'Suitmedia'
-
-  br
-  br
-  br
-  h2 Bronze Sponsors
-  br
-
-  = link_to 'http://cookpad.com', target: '_blank', style: 'margin-right: 25px;'
-    = image_tag 'logo/cookpad.png', style: 'vertical-align: middle;', alt: 'Cookpad'
-  = link_to 'http://geekhunter.co', target: '_blank'
-    = image_tag 'logo/geekhunter.png', style: 'vertical-align: middle;', alt: 'Geekhunter'
+    = link_to 'http://www.geekhunter.co', target: '_blank', class: 'media-partner col-2'
+      = image_tag 'logo/geekhunter.png', alt: 'Geekhunter', class: 'media-partner__logo'
 
 
 section.section#media-partners

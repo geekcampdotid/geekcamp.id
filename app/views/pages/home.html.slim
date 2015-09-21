@@ -2,9 +2,9 @@ ul#menu
  li: a href="#event" Event
  li: a href="#speakers" Speakers
  li: a href="#location" Location
- li: a href="#organizer" Organizer
  li: a href="#sponsors" Sponsors
  li: a href="#media-partners" Media Partners
+ li: a href="#communities" Communities
 
 #event
   .logo
@@ -255,5 +255,21 @@ section.section#media-partners
 
     = link_to 'http://vidio.com', target: '_blank', class: 'media-partner col-2'
       = image_tag 'logo/vidio.png', class: 'media-partner__logo', alt: 'Vidio'
+
+section.section#communities
+  header.header Communities
+  .grid
+    = link_to 'http://www.meetup.com/jakartarb/', target: '_blank', class: 'community col-2'
+      = image_tag 'logo/id-ruby.png', class: 'community__logo', alt: 'id-ruby'
+
+    = link_to 'http://www.meetup.com/JakartaJS/', target: '_blank', class: 'community col-2'
+      = image_tag 'logo/jakartajs.png', class: 'community__logo', alt: 'JakartaJS'
+
+    = link_to 'http://www.meetup.com/Python-ID/', target: '_blank', class: 'community col-2'
+      = image_tag 'logo/pythonid.jpg', class: 'community__logo', alt: 'PythonID'
+
+    = link_to 'http://www.phpindonesia.or.id', target: '_blank', class: 'community col-2'
+      = image_tag 'logo/phpindonesia.jpg', class: 'community__logo', alt: 'PHP Indonesia'
+
 
 #footer &copy; Copyright 2015 by GeekCamp&ensp;|&ensp;All Rights Reserved.

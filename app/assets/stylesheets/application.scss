@@ -172,7 +172,7 @@ html, body {
   text-align: center;
   position: relative;
   top: 100px;
-  margin-bottom: 50px;
+  margin-bottom: 200px;
 }
 
 #footer, #sponsors {
@@ -299,3 +299,11 @@ html, body {
   top: 10px;
 }
 
+.community {
+  text-align: center;
+  margin-bottom: 50px;
+}
+
+.community__logo {
+  vertical-align: middle;
+}

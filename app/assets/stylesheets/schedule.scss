@@ -1,0 +1,48 @@
+.schedule {
+  color: #333;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 14px;
+  line-height: 30px;
+  width: 100%;
+}
+
+.schedule__header {
+  color: #333;
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.schedule__time {
+  border-top: 1px dashed red;
+  color: #999;
+  padding-left: 10px;
+  width: 100px;
+}
+
+.schedule__slot {
+  padding: 5px 0 5px 15px;
+  width: 45%;
+}
+
+.schedule__topic {
+  font-weight: 600;
+}
+
+.schedule__topic--to-be-confirmed {
+  font-weight: normal;
+  font-style: oblique;
+}
+
+.schedule__image {
+  border: 2px solid #D5E2E2;
+  border-radius: 50%;
+  display: inline;
+  height: 50px;
+  vertical-align: middle;
+  width: 50px;
+}
+
+.schedule__name {
+  display: inline;
+  vertical-align: middle;
+}

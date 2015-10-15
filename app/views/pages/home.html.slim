@@ -1,7 +1,6 @@
 ul#menu
- li: a href="#event" Event
+ li: a href="#schedule" Schedule
  li: a href="#speakers" Speakers
- li: a href="#location" Location
  li: a href="#sponsors" Sponsors
  li: a href="#media-partners" Media Partners
  li: a href="#communities" Communities
@@ -23,6 +22,225 @@ ul#menu
   .sponsorship: a href="http://goo.gl/forms/ONjHHZpTVj" target="_blank" Become a sponsor!
 
   .spike
+
+#schedule
+  header.header Schedule
+
+  section.section
+    table.schedule
+      thead
+        tr
+          th
+          th.schedule__header Hall A
+          th.schedule__header Hall B
+
+      tbody
+        tr
+          td.schedule__time 09.30 - 10.00
+          td.schedule__slot Open Registration
+          td
+
+        tr
+          td.schedule__time 10.00 - 10.20
+          td.schedule__slot
+            .schedule__topic Startup Engineering Culture - What Matters and What Does Not
+            .schedule__speaker
+              = image_tag "speakers/mohan.jpg", class: "schedule__image", alt: "Mohan"
+              .schedule__name Mohan Krishnan
+
+          td
+
+        tr
+          td.schedule__time 10.25 - 10.45
+          td.schedule__slot
+            .schedule__topic Industry Perspective: Machine Learning and Their Ecosystems
+            .schedule__speaker
+              = image_tag "speakers/alfred.jpg", class: "schedule__image", alt: "Alfred"
+              .schedule__name Alfred Boediman
+
+          td.schedule__slot
+            .schedule__topic Scaling Up Your Startups
+            .schedule__speaker
+              = image_tag "speakers/anggri.jpg", class: "schedule__image", alt: "Anggri"
+              .schedule__name Anggriawan Sugianto
+
+        tr
+          td.schedule__time 10.50 - 11.10
+          td.schedule__slot
+            .schedule__topic.schedule__topic--to-be-confirmed Topic to be confirmed.
+            .schedule__speaker
+              = image_tag "speakers/hadi.jpg", class: "schedule__image", alt: "Hadi"
+              .schedule__name Hadi Saloko
+
+          td.schedule__slot
+            .schedule__topic The Future of Social Media
+            .schedule__speaker
+              = image_tag "speakers/aqsath.jpg", class: "schedule__image", alt: "Aqsath"
+              .schedule__name Aqsath Rasyid
+
+        tr
+          td.schedule__time 11.15 - 11.35
+          td.schedule__slot
+            .schedule__topic.schedule__topic--to-be-confirmed Topic to be confirmed.
+            .schedule__speaker
+              = image_tag "speakers/dhiku.jpg", class: "schedule__image", alt: "Dhiku"
+              .schedule__name Hadikusuma Wahab
+
+          td.schedule__slot
+            .schedule__topic Build a Chat Bot with Hubot to Boost Productivity
+            .schedule__speaker
+              = image_tag "speakers/didik.jpg", class: "schedule__image", alt: "Didik"
+              .schedule__name Didik Wicaksono
+
+        tr
+          td.schedule__time 11.40 - 12.00
+          td.schedule__slot
+            .schedule__topic.schedule__topic--to-be-confirmed Topic to be confirmed.
+            .schedule__speaker
+              = image_tag "speakers/pahlevi.jpg", class: "schedule__image", alt: "Pahlevi"
+              .schedule__name Pahlevi Fikri Auliya
+
+          td.schedule__slot
+            .schedule__topic Incorporating Digital to Business
+            .schedule__speaker
+              = image_tag "speakers/alvin.jpg", class: "schedule__image", alt: "Alvin"
+              .schedule__name Alvin Wahyudi
+
+        tr
+          td.schedule__time 12.00 - 13.00
+          td.schedule__slot Break
+
+        tr
+          td.schedule__time 13.00 - 13.20
+          td.schedule__slot
+            .schedule__topic Discover Your Superpower, Fellow Developers
+            .schedule__speaker
+              = image_tag "speakers/riza.jpg", class: "schedule__image", alt: "Riza"
+              .schedule__name Riza Fahmi
+
+          td.schedule__slot
+            .schedule__topic HTTP2: Generasi Baru Performa Web
+            .schedule__speaker
+              = image_tag "speakers/edwin.jpg", class: "schedule__image", alt: "Edwin"
+              .schedule__name Edwin Lunando
+
+        tr
+          td.schedule__time 13.25 - 13.45
+          td.schedule__slot
+            .schedule__topic Realtime Discussion App using ActionCable on Rails (5.0)
+            .schedule__speaker
+              = image_tag "speakers/gio.jpg", class: "schedule__image", alt: "Gio"
+              .schedule__name Giovanni Sakti
+
+          td.schedule__slot
+            .schedule__topic Merekrut Tenaga Programmer Handal Dari Komunitas
+            .schedule__speaker
+              = image_tag "speakers/peter.jpg", class: "schedule__image", alt: "Peter"
+              .schedule__name Peter J. Kambey
+
+        tr
+          td.schedule__time 13.50 - 14.10
+          td.schedule__slot
+            .schedule__topic Isomorphic Applications with Javascript
+            .schedule__speaker
+              = image_tag "speakers/hengki.jpg", class: "schedule__image", alt: "Hengki"
+              .schedule__name Hengki Sihombing
+
+          td.schedule__slot
+            .schedule__topic Pentingnya Code Convention & Development Guidelines
+            .schedule__speaker
+              = image_tag "speakers/sirius.jpg", class: "schedule__image", alt: "Sirius"
+              .schedule__name Sirius Dely
+
+        tr
+          td.schedule__time 14.15 - 14.35
+          td.schedule__slot
+            .schedule__topic.schedule__topic--to-be-confirmed Topic to be confirmed.
+            .schedule__speaker
+              = image_tag "speakers/arief.jpg", class: "schedule__image", alt: "Arief"
+              .schedule__name Arief Widhiyasa
+
+          td.schedule__slot
+            .schedule__topic Talent War in IT
+            .schedule__speaker
+              = image_tag "speakers/anggra.jpg", class: "schedule__image", alt: "Anggra"
+              .schedule__name Yunita Anggraeni
+
+        tr
+          td.schedule__time 14.40 - 15.00
+          td.schedule__slot
+            .schedule__topic UX Design Techniques for Non Tech-Savvy Indonesians
+            .schedule__speaker
+              = image_tag "speakers/albert.jpg", class: "schedule__image", alt: "Albert"
+              .schedule__name Albert Lucius
+
+          td.schedule__slot
+            .schedule__topic Build Web Based Video Call Application Using WebRTC
+            .schedule__speaker
+              = image_tag "speakers/fitra.jpg", class: "schedule__image", alt: "Fitra"
+              .schedule__name Fitra Aditya
+
+        tr
+          td.schedule__time 15.05 - 15.25
+          td.schedule__slot
+            .schedule__topic Property-Based Testing in Python with Hypothesis
+            .schedule__speaker
+              = image_tag "speakers/michel.jpg", class: "schedule__image", alt: "Michel"
+              .schedule__name Michel Alexandre Salim
+
+          td.schedule__slot
+            .schedule__topic Mental Model for UX Designer
+            .schedule__speaker
+              = image_tag "speakers/gage.jpg", class: "schedule__image", alt: "Gage"
+              .schedule__name Gage Batubara
+
+        tr
+          td.schedule__time 15.30 - 15.50
+          td.schedule__slot
+            .schedule__topic Programmable Music
+            .schedule__speaker
+              = image_tag "speakers/asep.jpg", class: "schedule__image", alt: "Asep"
+              .schedule__name Asep Bagja
+
+          td.schedule__slot
+            .schedule__topic
+            .schedule__speaker
+              .schedule__name
+
+        tr
+          td.schedule__time 15.55 - 16.15
+          td.schedule__slot
+            .schedule__topic UX Research and Strategy Basics
+            .schedule__speaker
+              = image_tag "speakers/naning.jpg", class: "schedule__image", alt: "Naning"
+              .schedule__name Naning Utoyo
+
+          td.schedule__slot
+            .schedule__topic Project Management (NBA)
+            .schedule__speaker
+              = image_tag "speakers/nur.jpg", class: "schedule__image", alt: "Nur"
+              .schedule__name Nur Agus Suryoko
+
+        tr
+          td.schedule__time 16.20 - 16.40
+          td.schedule__slot
+            .schedule__topic From Startup to World Class Engineering Team
+            .schedule__speaker
+              = image_tag "speakers/reydi.jpg", class: "schedule__image", alt: "Reydi"
+              .schedule__name Reydi Sutandang
+
+          td.schedule__slot
+            .schedule__topic Developing the Right Product in Urban Trend
+            .schedule__speaker
+              = image_tag "speakers/faustine.jpg", class: "schedule__image", alt: "faustine"
+              .schedule__name Faustine Tan
+
+  br
+  br
+  br
+  br
+  br
+  br
 
 #speakers
   header.header Speakers
@@ -95,9 +313,19 @@ section.section
       .speaker-topic__topic Scaling Up Your Startups
 
     .speaker-topic.col-2
+      = image_tag "speakers/arief.jpg", class: 'speaker-topic__image', alt: 'Arief'
+      .speaker-topic__name Arief Widhiyasa, CEO at Agate
+      .speaker-topic__topic.speaker-topic__topic--to-be-confirmed Topic to be confirmed.
+
+    .speaker-topic.col-2
       = image_tag "speakers/asep.jpg", class: 'speaker-topic__image', alt: 'Asep'
       .speaker-topic__name Asep Bagja, Lambda Jakarta
       .speaker-topic__topic Programmable Music
+
+    .speaker-topic.col-2
+      = image_tag "speakers/aqsath.jpg", class: 'speaker-topic__image', alt: 'Aqsath'
+      .speaker-topic__name Aqsath Rasyid, CEO at NoLimit
+      .speaker-topic__topic Future of Social Media
 
     .speaker-topic.col-2
       = image_tag "speakers/adam.jpg", class: 'speaker-topic__image', alt: 'Adam'
@@ -140,6 +368,11 @@ section.section
       .speaker-topic__topic Realtime Discussion App using ActionCable on Rails (5.0)
 
     .speaker-topic.col-2
+      = image_tag "speakers/hadi.jpg", class: 'speaker-topic__image', alt: 'Hadi'
+      .speaker-topic__name Hadi Saloko, Manager of Software Engineering at Bukalapak
+      .speaker-topic__topic.speaker-topic__topic--to-be-confirmed Topic to be confirmed.
+
+    .speaker-topic.col-2
       = image_tag "speakers/dhiku.jpg", class: 'speaker-topic__image', alt: 'Dhiku'
       .speaker-topic__name Hadikusuma Wahab, VP Product at KMKLabs
       .speaker-topic__topic.speaker-topic__topic--to-be-confirmed Topic to be confirmed.
@@ -157,7 +390,7 @@ section.section
     .speaker-topic.col-2
       = image_tag "speakers/mohan.jpg", class: 'speaker-topic__image', alt: 'Mohan'
       .speaker-topic__name Mohan Krishnan, CTO at KMKLabs
-      .speaker-topic__topic Startup engineering culture - what matters and what does not
+      .speaker-topic__topic Startup Engineering Culture - What Matters and What Does Not
 
     .speaker-topic.col-2
       = image_tag "speakers/naning.jpg", class: 'speaker-topic__image', alt: 'Naning'
@@ -165,9 +398,19 @@ section.section
       .speaker-topic__topic UX Research and Strategy Basics
 
     .speaker-topic.col-2
+      = image_tag "speakers/nur.jpg", class: 'speaker-topic__image', alt: 'Nur'
+      .speaker-topic__name Nur Agus Suryoko, Infrastructure Architect at Virkea
+      .speaker-topic__topic Project Management (NBA)
+
+    .speaker-topic.col-2
       = image_tag "speakers/pahlevi.jpg", class: 'speaker-topic__image', alt: 'Pahlevi'
       .speaker-topic__name Pahlevi Fikri Auliya, CTO at HijUp
       .speaker-topic__topic.speaker-topic__topic--to-be-confirmed Topic to be confirmed.
+
+    .speaker-topic.col-2
+      = image_tag "speakers/peter.jpg", class: 'speaker-topic__image', alt: 'Peter'
+      .speaker-topic__name Peter J. Kambey, PHP Indonesia
+      .speaker-topic__topic Merekrut Tenaga Programmer Handal Dari Komunitas
 
     .speaker-topic.col-2
       = image_tag "speakers/rafeequl.jpg", class: 'speaker-topic__image', alt: 'Rafeequl'
@@ -175,9 +418,14 @@ section.section
       .speaker-topic__topic Organic Engineering Culture
 
     .speaker-topic.col-2
+      = image_tag "speakers/reydi.jpg", class: 'speaker-topic__image', alt: 'Reydi'
+      .speaker-topic__name Reydi Sutandang, Software Engineer at Invoice2go
+      .speaker-topic__topic From Startup to World Class Engineering Team
+
+    .speaker-topic.col-2
       = image_tag "speakers/riza.jpg", class: 'speaker-topic__image', alt: 'Riza'
       .speaker-topic__name Riza Fahmi, CTO at CitizenLab
-      .speaker-topic__topic Meteor / Functional Programming
+      .speaker-topic__topic Discover Your Superpower, Fellow Developers
 
     .speaker-topic.col-2
       = image_tag "speakers/sirius.jpg", class: 'speaker-topic__image', alt: 'Sirius'
@@ -194,7 +442,6 @@ section.section
   br
   br
 
-#schedule
 #location
   .header Location
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.2722459804145!2d106.79708719999998!3d-6.227792599999991!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f6b449568329%3A0x492ec0c8279461c6!2sSCTV!5e0!3m2!1sen!2sid!4v1440813114024" width="100%" height="450" frameborder="0" style="border:0;pointer-events:none;" allowfullscreen></iframe>

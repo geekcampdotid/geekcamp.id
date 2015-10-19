@@ -28,6 +28,11 @@
   font-weight: 600;
 }
 
+.schedule__speaker {
+  display: inline-block;
+  margin-right: 15px;
+}
+
 .schedule__topic--to-be-confirmed {
   font-weight: normal;
   font-style: oblique;

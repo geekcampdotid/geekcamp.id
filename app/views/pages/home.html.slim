@@ -84,9 +84,10 @@ ul#menu
         tr
           td.schedule__time 11.15 - 11.35
           td.schedule__slot
-            .schedule__topic
+            .schedule__topic.schedule__topic--to-be-confirmed Topic to be confirmed.
             .schedule__speaker
-              .schedule__name
+              = image_tag "speakers/shinta.jpg", class: "schedule__image", alt: "Shinta"
+              .schedule__name Shinta Witoyo Dhanuwardoyo
 
           td.schedule__slot
             .schedule__topic Build a Chat Bot with Hubot to Boost Productivity

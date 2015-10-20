@@ -242,9 +242,10 @@ ul#menu
         tr
           td.schedule__time 16.45 - 17.05
           td.schedule__slot
-            .schedule__topic
+            .schedule__topic.schedule__topic--to-be-confirmed Topic to be confirmed.
             .schedule__speaker
-              .schedule__name
+              = image_tag "speakers/ray.jpg", class: "schedule__image", alt: "Ray"
+              .schedule__name Ray Rizaldy
 
           td.schedule__slot
             .schedule__topic Product Management from Early Stage to Growth Stage Startup
@@ -442,6 +443,11 @@ section.section
       = image_tag "speakers/rafeequl.jpg", class: 'speaker-topic__image', alt: 'Rafeequl'
       .speaker-topic__name Rafeequl, VP Engineering at Veritrans Indonesia
       .speaker-topic__topic Organic Engineering Culture
+
+    .speaker-topic.col-2
+      = image_tag "speakers/ray.jpg", class: 'speaker-topic__image', alt: 'Ray'
+      .speaker-topic__name Ray Rizaldy, Co-founder of GITS Indonesia
+      .speaker-topic__topic.speaker-topic__topic--to-be-confirmed Topic to be confirmed.
 
     .speaker-topic.col-2
       = image_tag "speakers/reydi.jpg", class: 'speaker-topic__image', alt: 'Reydi'

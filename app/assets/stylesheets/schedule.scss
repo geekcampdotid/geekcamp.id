@@ -31,7 +31,17 @@
 }
 
 .schedule__topic {
+  display: block;
   font-weight: 600;
+  text-decoration: none;
+
+  &[href] {
+    color: #1D62AE;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 
 .schedule__speaker {

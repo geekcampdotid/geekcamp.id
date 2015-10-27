@@ -272,6 +272,15 @@ html, body {
 .speaker-topic__topic {
   font-weight: bold;
   color: #333;
+  text-decoration: none;
+
+  &[href] {
+    color: #1D62AE;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
 }
 .speaker-topic__topic--to-be-confirmed {
   font-weight: normal;

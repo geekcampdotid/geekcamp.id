@@ -1,0 +1,580 @@
+ul#menu
+ li: a href="#schedule" Schedule
+ li: a href="#speakers" Speakers
+ li: a href="#sponsors" Sponsors
+ li: a href="#media-partners" Media Partners
+ li: a href="#communities" Communities
+
+#event
+  .logo
+    = image_tag 'logo/geekcamp.png', class: 'logo__image', alt: 'Geekcamp'
+    .logo__caption The Biggest Tech-Savvy Conference in Indonesia
+
+  .headline One Day Event&ensp;&middot;&ensp;30 Speakers&ensp;&middot;&ensp;3 Topic Areas (Technology, UI/UX, Entrepreneurship)
+
+  .date-time
+    | October 24, 2015
+    br
+    <div style="font-size: 16px; margin-top: 5px;">The Hall 8th Floor, Senayan City, Jakarta</div>
+
+  .links
+    = link_to 'Get Your Ticket', '#', class: 'button'
+    | &emsp;
+    = link_to 'Call for Speaker', '#', class: 'button'
+
+  .sponsorship: a href="#" Become a sponsor!
+
+  br
+
+  .line
+    <a href="https://play.google.com/store/apps/details?id=suitmedia.geekcamp.android" target="_blank">
+      <img alt="Get it on Google Play" src="https://developer.android.com/images/brand/en_generic_rgb_wo_45.png" />
+    </a>
+
+  .spike
+
+#schedule
+  header.header Schedule
+
+  section.section
+    table.schedule
+      thead
+        tr
+          th
+          th.schedule__header Hall A
+          th.schedule__header Hall B
+
+      tbody
+        tr
+          td.schedule__time 09.00 - 10.00
+          td.schedule__slot.schedule__slot--span colspan="2" Open Registration
+
+        tr
+          td.schedule__time 10.00 - 10.20
+          td.schedule__slot
+            a.schedule__topic href="https://www.dropbox.com/s/89flz6j68nllq6d/Mohan%2BTommy%20-%20Startup%20Engineering%20Culture.pdf?dl=0" target="_blank" Startup Engineering Culture - What Matters and What Does Not
+            .schedule__speaker
+              = image_tag "speakers/mohan.jpg", class: "schedule__image", alt: "Mohan"
+              .schedule__name Mohan Krishnan
+            .schedule__speaker
+              = image_tag "speakers/tommy.jpg", class: "schedule__image", alt: "Tommy"
+              .schedule__name Tommy Sullivan
+
+          td style="background-color: #eee; text-align: center; font-size: 10px; color: #ccc;" NO SCHEDULE
+
+        tr
+          td.schedule__time 10.25 - 10.45
+          td.schedule__slot
+            a.schedule__topic href="https://www.dropbox.com/s/gp1wl3qtovtwkef/Samsung%20-%20Alfred.pdf?dl=0" target="_blank" Industry Perspective: Machine Learning and Their Ecosystems
+            .schedule__speaker
+              = image_tag "speakers/alfred.jpg", class: "schedule__image", alt: "Alfred"
+              .schedule__name Alfred Boediman
+
+          td.schedule__slot
+            a.schedule__topic href="https://www.dropbox.com/s/exrijsnnpsoubed/Suitmedia%20-%20Anggri.pdf?dl=0" target="_blank" Scaling Up Your Startups
+            .schedule__speaker
+              = image_tag "speakers/anggri.jpg", class: "schedule__image", alt: "Anggri"
+              .schedule__name Anggriawan Sugianto
+
+        tr
+          td.schedule__time 10.50 - 11.10
+          td.schedule__slot
+            a.schedule__topic href="https://www.dropbox.com/s/50g0xr3s2krjv4r/Bukalapak%20-%20Hadi.pdf?dl=0" target="_blank" Scaling Up: How Few Companies Make It &amp; The Rest Don't
+            .schedule__speaker
+              = image_tag "speakers/hadi.jpg", class: "schedule__image", alt: "Hadi"
+              .schedule__name Hadi Saloko
+
+          td.schedule__slot
+            .schedule__topic The Future of Social Media
+            .schedule__speaker
+              = image_tag "speakers/aqsath.jpg", class: "schedule__image", alt: "Aqsath"
+              .schedule__name Aqsath Rasyid
+
+        tr
+          td.schedule__time 11.15 - 11.35
+          td.schedule__slot
+            .schedule__topic Why Women Make a Great Startup Leader
+            .schedule__speaker
+              = image_tag "speakers/shinta.jpg", class: "schedule__image", alt: "Shinta"
+              .schedule__name Shinta Witoyo Dhanuwardoyo
+
+          td.schedule__slot
+            .schedule__topic Build a Chat Bot with Hubot to Boost Productivity
+            .schedule__speaker
+              = image_tag "speakers/didik.jpg", class: "schedule__image", alt: "Didik"
+              .schedule__name Didik Wicaksono
+
+        tr
+          td.schedule__time 11.40 - 12.00
+          td.schedule__slot
+            a.schedule__topic href="https://www.dropbox.com/s/ay7h6druuz07kll/HijUp%20-%20Pahlevi.pdf?dl=0" target="_blank" Scaling 101: Small Team, THousands Requests per Minute
+            .schedule__speaker
+              = image_tag "speakers/pahlevi.jpg", class: "schedule__image", alt: "Pahlevi"
+              .schedule__name Pahlevi Fikri Auliya
+
+          td.schedule__slot
+            .schedule__topic Incorporating Digital to Business
+            .schedule__speaker
+              = image_tag "speakers/alvin.jpg", class: "schedule__image", alt: "Alvin"
+              .schedule__name Alvin Wahyudi
+
+        tr
+          td.schedule__time 12.00 - 13.00
+          td.schedule__slot.schedule__slot--span colspan="2" Break
+
+        tr
+          td.schedule__time 13.00 - 13.20
+          td.schedule__slot
+            .schedule__topic Discover Your Superpower, Fellow Developers
+            .schedule__speaker
+              = image_tag "speakers/riza.jpg", class: "schedule__image", alt: "Riza"
+              .schedule__name Riza Fahmi
+
+          td.schedule__slot
+            a.schedule__topic href="https://www.dropbox.com/s/shayp1fzyu6hlas/Python%20-%20Edwin.pdf?dl=0" target="_blank" HTTP2: Generasi Baru Performa Web
+            .schedule__speaker
+              = image_tag "speakers/edwin.jpg", class: "schedule__image", alt: "Edwin"
+              .schedule__name Edwin Lunando
+
+        tr
+          td.schedule__time 13.25 - 13.45
+          td.schedule__slot
+            a.schedule__topic href="https://www.dropbox.com/s/qu0fij210gybo9r/JRB%20-%20Giovanni.pdf?dl=0" target="_blank" Realtime Discussion App using ActionCable on Rails (5.0)
+            .schedule__speaker
+              = image_tag "speakers/gio.jpg", class: "schedule__image", alt: "Gio"
+              .schedule__name Giovanni Sakti
+
+          td.schedule__slot
+            a.schedule__topic href="https://www.dropbox.com/s/t288ssmk4pvayvt/KMK%20-%20Dhiku.pdf?dl=0" target="_blank" Product Management from Early Stage to Growth Stage Startup
+            .schedule__speaker
+              = image_tag "speakers/dhiku.jpg", class: "schedule__image", alt: "Dhiku"
+              .schedule__name Hadikusuma Wahab
+
+        tr
+          td.schedule__time 13.50 - 14.10
+          td.schedule__slot
+            a.schedule__topic href="https://www.dropbox.com/s/u3k1jzi8beut5no/JakartaJS%20-%20Hengki.pdf?dl=0" target="_blank" Isomorphic Applications with Javascript
+            .schedule__speaker
+              = image_tag "speakers/hengki.jpg", class: "schedule__image", alt: "Hengki"
+              .schedule__name Hengki Sihombing
+
+          td.schedule__slot
+            a.schedule__topic href="https://www.dropbox.com/s/fu2yh1tyden4opg/2359%20Media%20-%20Sirius.pdf?dl=0" target="_blank" Pentingnya Code Convention & Development Guidelines
+            .schedule__speaker
+              = image_tag "speakers/sirius.jpg", class: "schedule__image", alt: "Sirius"
+              .schedule__name Sirius Dely
+
+        tr
+          td.schedule__time 14.15 - 14.35
+          td.schedule__slot
+            a.schedule__topic href="https://www.dropbox.com/s/kq3y4cgbwkp35qm/Agate%20-%20Teguh.pdf?dl=0" target="_blank" A Short Story of Physical Based Rendering
+            .schedule__speaker
+              = image_tag "speakers/teguh.jpg", class: "schedule__image", alt: "Teguh"
+              .schedule__name Teguh Budi Wicaksono
+
+          td.schedule__slot
+            a.schedule__topic href="https://www.dropbox.com/s/qnpzc9seyxq5hxv/Geekhunter%20-%20Anggra.pdf?dl=0" target="_blank" Talent War in IT
+            .schedule__speaker
+              = image_tag "speakers/anggra.jpg", class: "schedule__image", alt: "Anggra"
+              .schedule__name Yunita Anggraeni
+
+        tr
+          td.schedule__time 14.40 - 15.00
+          td.schedule__slot
+            a.schedule__topic href="https://www.dropbox.com/s/9jf142ptg8hxla9/Kudo%20-%20Albert.pdf?dl=0" target="_blank" UX Design Techniques for Non Tech-Savvy Indonesians
+            .schedule__speaker
+              = image_tag "speakers/albert.jpg", class: "schedule__image", alt: "Albert"
+              .schedule__name Albert Lucius
+
+          td.schedule__slot
+            .schedule__topic Build Web Based Video Call Application Using WebRTC
+            .schedule__speaker
+              = image_tag "speakers/fitra.jpg", class: "schedule__image", alt: "Fitra"
+              .schedule__name Fitra Aditya
+
+        tr
+          td.schedule__time 15.05 - 15.25
+          td.schedule__slot
+            .schedule__topic Property-Based Testing in Python with Hypothesis
+            .schedule__speaker
+              = image_tag "speakers/michel.jpg", class: "schedule__image", alt: "Michel"
+              .schedule__name Michel Alexandre Salim
+
+          td.schedule__slot
+            .schedule__topic Mental Model for UX Designer
+            .schedule__speaker
+              = image_tag "speakers/gage.jpg", class: "schedule__image", alt: "Gage"
+              .schedule__name Gage Batubara
+
+        tr
+          td.schedule__time 15.30 - 15.50
+          td.schedule__slot
+            a.schedule__topic href="https://www.dropbox.com/s/nbu4vtr0nqevll9/Lambda%20-%20Asep.pdf?dl=0" target="_blank" Programmable Music
+            .schedule__speaker
+              = image_tag "speakers/asep.jpg", class: "schedule__image", alt: "Asep"
+              .schedule__name Asep Bagja
+
+          td.schedule__slot
+            a.schedule__topic href="https://www.dropbox.com/s/pwftjnth80ctj74/Veritrans%20-%20Rafeequl.pdf?dl=0" target="_blank" Organic Engineering Culture
+            .schedule__speaker
+              = image_tag "speakers/rafeequl.jpg", class: "schedule__image", alt: "Rafeequl"
+              .schedule__name Rafeequl
+
+        tr
+          td.schedule__time 15.55 - 16.15
+          td.schedule__slot
+            .schedule__topic UX Research and Strategy Basics
+            .schedule__speaker
+              = image_tag "speakers/naning.jpg", class: "schedule__image", alt: "Naning"
+              .schedule__name Naning Utoyo
+
+          td.schedule__slot
+            a.schedule__topic href="https://www.dropbox.com/s/hb8jk0oqm1wbie7/Virkea%20-%20Nur%20Agus.pdf?dl=0" target="_blank" Project Management (NBA)
+            .schedule__speaker
+              = image_tag "speakers/nur.jpg", class: "schedule__image", alt: "Nur"
+              .schedule__name Nur Agus Suryoko
+
+        tr
+          td.schedule__time 16.20 - 16.40
+          td.schedule__slot
+            a.schedule__topic href="https://www.dropbox.com/s/lg5bwun6faujodl/Invoice2go%20-%20Reydi.pdf?dl=0" target="_blank" From Startup to World Class Engineering Team
+            .schedule__speaker
+              = image_tag "speakers/reydi.jpg", class: "schedule__image", alt: "Reydi"
+              .schedule__name Reydi Sutandang
+
+          td.schedule__slot
+            a.schedule__topic href="https://www.dropbox.com/s/r8hkk886smjaswx/HotelQuickly%20-%20Faustine.pdf?dl=0" target="_blank" Developing the Right Product in Urban Trend
+            .schedule__speaker
+              = image_tag "speakers/faustine.jpg", class: "schedule__image", alt: "faustine"
+              .schedule__name Faustine Tan
+
+        tr
+          td.schedule__time 16.45 - 17.05
+          td.schedule__slot
+            .schedule__topic Understanding Mobile Users
+            .schedule__speaker
+              = image_tag "speakers/ray.jpg", class: "schedule__image", alt: "Ray"
+              .schedule__name Ray Rizaldy
+
+          td.schedule__slot
+            .schedule__topic Merekrut Tenaga Programmer Handal Dari Komunitas
+            .schedule__speaker
+              = image_tag "speakers/peter.jpg", class: "schedule__image", alt: "Peter"
+              .schedule__name Peter J. Kambey
+
+  br
+  br
+  br
+  br
+  br
+  br
+
+#speakers
+  header.header Speakers
+
+  .speaker
+    = image_tag "speakers/albert.jpg", class: 'speaker__image', alt: 'Albert'
+    .speaker__name Albert Lucius
+    .speaker__title CEO at Kudo
+
+  .speaker
+    = image_tag "speakers/alfred.jpg", class: 'speaker__image', alt: 'Alfred'
+    .speaker__name Alfred Boediman
+    .speaker__title VP of Samsung RnD Institute Indonesia
+
+  .speaker
+    = image_tag "speakers/anggri.jpg", class: 'speaker__image', alt: 'Anggri'
+    .speaker__name Anggriawan Sugianto
+    .speaker__title CTO / COO at Suitmedia Digital Agency
+
+  .speaker
+    = image_tag "speakers/dhiku.jpg", class: 'speaker__image', alt: 'Dhiku'
+    .speaker__name Hadikusuma Wahab
+    .speaker__title VP Product at KMKLabs
+
+  br
+  br
+  br
+
+  .speaker
+    = image_tag "speakers/mohan.jpg", class: 'speaker__image', alt: 'Mohan'
+    .speaker__name Mohan Krishnan
+    .speaker__title CTO at KMKLabs
+
+  .speaker
+    = image_tag "speakers/naning.jpg", class: 'speaker__image', alt: 'Naning'
+    .speaker__name Naning Utoyo
+    .speaker__title UX Strategist at TradeGecko
+
+  .speaker
+    = image_tag "speakers/pahlevi.jpg", class: 'speaker__image', alt: 'Pahlevi'
+    .speaker__name Pahlevi Fikri Auliya
+    .speaker__title CTO at HijUp
+
+  .speaker
+    = image_tag "speakers/rafeequl.jpg", class: 'speaker__image', alt: 'Rafeequl'
+    .speaker__name Rafeequl
+    .speaker__title VP Engineering at Veritrans Indonesia
+
+  br
+  br
+  br
+
+  .speaker
+    = image_tag "speakers/shinta.jpg", class: 'speaker__image', alt: 'Shinta'
+    .speaker__name Shinta Witoyo Dhanuwardoyo
+    .speaker__title CEO &amp; Founder at Bubu
+
+  .speaker
+    = image_tag "speakers/tommy.jpg", class: 'speaker__image', alt: 'Tommy'
+    .speaker__name Tommy Sullivan
+    .speaker__title VP Engineering at KMKLabs
+
+  br
+  br
+  br
+  br
+  br
+
+section.section
+  .grid
+    .speaker-topic.col-2
+      = image_tag "speakers/albert.jpg", class: 'speaker-topic__image', alt: 'Albert'
+      .speaker-topic__name Albert Lucius, CEO at Kudo
+      a.speaker-topic__topic href="https://www.dropbox.com/s/9jf142ptg8hxla9/Kudo%20-%20Albert.pdf?dl=0" target="_blank" UX Design Techniques for Non Tech-Savvy Indonesians
+
+    .speaker-topic.col-2
+      = image_tag "speakers/alfred.jpg", class: 'speaker-topic__image', alt: 'Alfred'
+      .speaker-topic__name Alfred Boediman, VP of Samsung RnD Institute Indonesia
+      a.speaker-topic__topic href="https://www.dropbox.com/s/gp1wl3qtovtwkef/Samsung%20-%20Alfred.pdf?dl=0" target="_blank" Industry Perspective: Machine Learning and Their Ecosystems
+
+    .speaker-topic.col-2
+      = image_tag "speakers/anggri.jpg", class: 'speaker-topic__image', alt: 'Anggri'
+      .speaker-topic__name Anggriawan Sugianto, CTO / COO at Suitmedia Digital Agency
+      a.speaker-topic__topic href="https://www.dropbox.com/s/exrijsnnpsoubed/Suitmedia%20-%20Anggri.pdf?dl=0" target="_blank" Scaling Up Your Startups
+
+    .speaker-topic.col-2
+      = image_tag "speakers/asep.jpg", class: 'speaker-topic__image', alt: 'Asep'
+      .speaker-topic__name Asep Bagja, Lambda Jakarta
+      a.speaker-topic__topic href="https://www.dropbox.com/s/nbu4vtr0nqevll9/Lambda%20-%20Asep.pdf?dl=0" target="_blank" Programmable Music
+
+    .speaker-topic.col-2
+      = image_tag "speakers/aqsath.jpg", class: 'speaker-topic__image', alt: 'Aqsath'
+      .speaker-topic__name Aqsath Rasyid, CEO at NoLimit
+      .speaker-topic__topic Future of Social Media
+
+    .speaker-topic.col-2
+      = image_tag "speakers/alvin.jpg", class: 'speaker-topic__image', alt: 'Alvin'
+      .speaker-topic__name Alvin Wahyudi, Oracle Fusion Consultant at Oracle Indonesia
+      .speaker-topic__topic Incorporating Digital to Business
+
+    .speaker-topic.col-2
+      = image_tag "speakers/didik.jpg", class: 'speaker-topic__image', alt: 'Didik'
+      .speaker-topic__name Didik Wicaksono, CTO at Cookpad Indonesia
+      .speaker-topic__topic Build a Chat Bot with Hubot to Boost Productivity
+
+    .speaker-topic.col-2
+      = image_tag "speakers/edwin.jpg", class: 'speaker-topic__image', alt: 'Edwin'
+      .speaker-topic__name Edwin Lunando, PythonID
+      a.speaker-topic__topic href="https://www.dropbox.com/s/shayp1fzyu6hlas/Python%20-%20Edwin.pdf?dl=0" target="_blank" HTTP2: Generasi Baru Performa Web
+
+    .speaker-topic.col-2
+      = image_tag "speakers/faustine.jpg", class: 'speaker-topic__image', alt: 'Faustine'
+      .speaker-topic__name Faustine Tan, Co-Founder at HotelQuickly
+      a.speaker-topic__topic href="https://www.dropbox.com/s/r8hkk886smjaswx/HotelQuickly%20-%20Faustine.pdf?dl=0" target="_blank" Developing the Right Product in Urban Trend
+
+    .speaker-topic.col-2
+      = image_tag "speakers/fitra.jpg", class: 'speaker-topic__image', alt: 'Fitra'
+      .speaker-topic__name Fitra Aditya, Software Engineer at Qiscus
+      .speaker-topic__topic Build Web Based Video Call Application Using WebRTC
+
+    .speaker-topic.col-2
+      = image_tag "speakers/gage.jpg", class: 'speaker-topic__image', alt: 'Gage'
+      .speaker-topic__name Gage Batubara, Lead UX at KMKLabs
+      .speaker-topic__topic Mental Model for UX Designer
+
+    .speaker-topic.col-2
+      = image_tag "speakers/gio.jpg", class: 'speaker-topic__image', alt: 'Gio'
+      .speaker-topic__name Giovanni Sakti, Jakarta Ruby Brigade
+      a.speaker-topic__topic href="https://www.dropbox.com/s/qu0fij210gybo9r/JRB%20-%20Giovanni.pdf?dl=0" target="_blank" Realtime Discussion App using ActionCable on Rails (5.0)
+
+    .speaker-topic.col-2
+      = image_tag "speakers/hadi.jpg", class: 'speaker-topic__image', alt: 'Hadi'
+      .speaker-topic__name Hadi Saloko, Manager of Software Engineering at Bukalapak
+      a.speaker-topic__topic href="https://www.dropbox.com/s/50g0xr3s2krjv4r/Bukalapak%20-%20Hadi.pdf?dl=0" target="_blank" Scaling Up: How Few Companies Make It &amp; The Rest Don't
+
+    .speaker-topic.col-2
+      = image_tag "speakers/dhiku.jpg", class: 'speaker-topic__image', alt: 'Dhiku'
+      .speaker-topic__name Hadikusuma Wahab, VP Product at KMKLabs
+      a.speaker-topic__topic href="https://www.dropbox.com/s/t288ssmk4pvayvt/KMK%20-%20Dhiku.pdf?dl=0" target="_blank" Product Management from Early Stage to Growth Stage Startup
+
+    .speaker-topic.col-2
+      = image_tag "speakers/hengki.jpg", class: 'speaker-topic__image', alt: 'Hengki'
+      .speaker-topic__name Hengki Sihombing, JakartaJS
+      a.speaker-topic__topic href="https://www.dropbox.com/s/u3k1jzi8beut5no/JakartaJS%20-%20Hengki.pdf?dl=0" target="_blank" Isomorphic Applications with Javascript
+
+    .speaker-topic.col-2
+      = image_tag "speakers/michel.jpg", class: 'speaker-topic__image', alt: 'Michel'
+      .speaker-topic__name Michel Alexandre Salim, Head DevOps at Traveloka
+      .speaker-topic__topic Property-Based Testing in Python with Hypothesis
+
+    .speaker-topic.col-2
+      = image_tag "speakers/mohan.jpg", class: 'speaker-topic__image', alt: 'Mohan'
+      .speaker-topic__name Mohan Krishnan, CTO at KMKLabs
+      a.speaker-topic__topic href="https://www.dropbox.com/s/89flz6j68nllq6d/Mohan%2BTommy%20-%20Startup%20Engineering%20Culture.pdf?dl=0" target="_blank" Startup Engineering Culture - What Matters &amp; What Does Not
+
+    .speaker-topic.col-2
+      = image_tag "speakers/naning.jpg", class: 'speaker-topic__image', alt: 'Naning'
+      .speaker-topic__name Naning Utoyo, UX Strategist at TradeGecko
+      .speaker-topic__topic UX Research and Strategy Basics
+
+    .speaker-topic.col-2
+      = image_tag "speakers/nur.jpg", class: 'speaker-topic__image', alt: 'Nur'
+      .speaker-topic__name Nur Agus Suryoko, Infrastructure Architect at Virkea
+      a.speaker-topic__topic href="https://www.dropbox.com/s/hb8jk0oqm1wbie7/Virkea%20-%20Nur%20Agus.pdf?dl=0" target="_blank" Project Management (NBA)
+
+    .speaker-topic.col-2
+      = image_tag "speakers/pahlevi.jpg", class: 'speaker-topic__image', alt: 'Pahlevi'
+      .speaker-topic__name Pahlevi Fikri Auliya, CTO at HijUp
+      a.speaker-topic__topic href="https://www.dropbox.com/s/ay7h6druuz07kll/HijUp%20-%20Pahlevi.pdf?dl=0" target="_blank" Scaling 101: Small Team, THousands Requests per Minute
+
+    .speaker-topic.col-2
+      = image_tag "speakers/peter.jpg", class: 'speaker-topic__image', alt: 'Peter'
+      .speaker-topic__name Peter J. Kambey, PHP Indonesia
+      .speaker-topic__topic Merekrut Tenaga Programmer Handal Dari Komunitas
+
+    .speaker-topic.col-2
+      = image_tag "speakers/rafeequl.jpg", class: 'speaker-topic__image', alt: 'Rafeequl'
+      .speaker-topic__name Rafeequl, VP Engineering at Veritrans Indonesia
+      a.speaker-topic__topic href="https://www.dropbox.com/s/pwftjnth80ctj74/Veritrans%20-%20Rafeequl.pdf?dl=0" target="_blank" Organic Engineering Culture
+
+    .speaker-topic.col-2
+      = image_tag "speakers/ray.jpg", class: 'speaker-topic__image', alt: 'Ray'
+      .speaker-topic__name Ray Rizaldy, Co-founder of GITS Indonesia
+      .speaker-topic__topic Understanding Mobile Users
+
+    .speaker-topic.col-2
+      = image_tag "speakers/reydi.jpg", class: 'speaker-topic__image', alt: 'Reydi'
+      .speaker-topic__name Reydi Sutandang, Software Engineer at Invoice2go
+      a.speaker-topic__topic href="https://www.dropbox.com/s/lg5bwun6faujodl/Invoice2go%20-%20Reydi.pdf?dl=0" target="_blank" From Startup to World Class Engineering Team
+
+    .speaker-topic.col-2
+      = image_tag "speakers/riza.jpg", class: 'speaker-topic__image', alt: 'Riza'
+      .speaker-topic__name Riza Fahmi, CTO at CitizenLab
+      .speaker-topic__topic Discover Your Superpower, Fellow Developers
+
+    .speaker-topic.col-2
+      = image_tag "speakers/shinta.jpg", class: 'speaker-topic__image', alt: 'Shinta'
+      .speaker-topic__name Shinta Witoyo Danuwardoyo, CEO &amp; Founder at Bubu
+      .speaker-topic__topic Why Women Make a Great Startup Leader
+
+    .speaker-topic.col-2
+      = image_tag "speakers/sirius.jpg", class: 'speaker-topic__image', alt: 'Sirius'
+      .speaker-topic__name Sirius Dely, Engineering Manager at 2359 Media
+      a.speaker-topic__topic href="https://www.dropbox.com/s/fu2yh1tyden4opg/2359%20Media%20-%20Sirius.pdf?dl=0" target="_blank" Pentingnya Code Convention & Development Guidelines
+
+    .speaker-topic.col-2
+      = image_tag "speakers/teguh.jpg", class: 'speaker-topic__image', alt: 'Teguh'
+      .speaker-topic__name Teguh Budi Wicaksono, Technical Director at Agate
+      a.speaker-topic__topic href="https://www.dropbox.com/s/kq3y4cgbwkp35qm/Agate%20-%20Teguh.pdf?dl=0" target="_blank" A Short Story of Physical Based Rendering
+
+    .speaker-topic.col-2
+      = image_tag "speakers/tommy.jpg", class: 'speaker-topic__image', alt: 'Tommy'
+      .speaker-topic__name Tommy Sullivan, VP Engineering at KMKLabs
+      a.speaker-topic__topic href="https://www.dropbox.com/s/89flz6j68nllq6d/Mohan%2BTommy%20-%20Startup%20Engineering%20Culture.pdf?dl=0" target="_blank" Startup Engineering Culture - What Matters &amp; What Does Not
+
+    .speaker-topic.col-2
+      = image_tag "speakers/anggra.jpg", class: 'speaker-topic__image', alt: 'Anggra'
+      .speaker-topic__name Yunita Anggraeni, COO at GeekHunter
+      a.speaker-topic__topic href="https://www.dropbox.com/s/qnpzc9seyxq5hxv/Geekhunter%20-%20Anggra.pdf?dl=0" target="_blank" Talent War in IT
+
+  br
+  br
+  br
+  br
+
+#location
+  .header Location
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.274919358063!2d106.79462625145135!3d-6.227438695469963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1485e476a65%3A0x300c043104acc004!2sSenayan+City!5e0!3m2!1sid!2sid!4v1445520701170" width="100%" height="450" frameborder="0" style="border:0;pointer-events:none;" allowfullscreen></iframe>
+
+section.section#organizer
+  header.header Organized by
+  .grid
+    = link_to 'http://kmklabs.com', target: '_blank', class: 'media-partner col-2'
+      = image_tag 'logo/kmklabs.png', alt: 'KMKLabs', class: 'media-partner__logo'
+
+section.section#sponsors
+  header.header Sponsored by
+  .grid
+    = link_to 'http://bukalapak.com', target: '_blank', class: 'media-partner col-2'
+      = image_tag 'logo/bukalapak.png', alt: 'Bukalapak', class: 'media-partner__logo'
+
+    = link_to 'http://www.karir.com', target: '_blank', class: 'media-partner col-2'
+      = image_tag 'logo/karir.png', alt: 'Karir', class: 'media-partner__logo'
+
+    = link_to 'http://www.kudo.co.id', target: '_blank', class: 'media-partner col-2'
+      = image_tag 'logo/kudo.png', alt: 'Kudo', class: 'media-partner__logo'
+
+    = link_to 'http://veritrans.co.id', target: '_blank', class: 'media-partner col-2'
+      = image_tag 'logo/veritrans.png', alt: 'Veritrans', class: 'media-partner__logo'
+
+    = link_to 'http://hotelquickly.com', target: '_blank', class: 'media-partner col-2'
+      = image_tag 'logo/hotelquickly.png', alt: 'HotelQuickly', class: 'media-partner__logo'
+
+    = link_to 'http://suitmedia.com', target: '_blank', class: 'media-partner col-2'
+      = image_tag 'logo/suitmedia.png', alt: 'Suitmedia', class: 'media-partner__logo'
+
+    = link_to 'http://ruma.co.id', target: '_blank', class: 'media-partner col-2'
+      = image_tag 'logo/ruma.png', alt: 'Ruma', class: 'media-partner__logo'
+
+    = link_to 'http://www.cookpad.com', target: '_blank', class: 'media-partner col-2'
+      = image_tag 'logo/cookpad.png', alt: 'Cookpad', class: 'media-partner__logo'
+
+    = link_to 'http://www.masterweb.net', target: '_blank', class: 'media-partner col-2'
+      = image_tag 'logo/mwn.png', alt: 'Cookpad', class: 'media-partner__logo'
+
+    = link_to 'http://www.geekhunter.co', target: '_blank', class: 'media-partner col-2'
+      = image_tag 'logo/geekhunter.png', alt: 'Geekhunter', class: 'media-partner__logo'
+
+
+section.section#media-partners
+  header.header Media Partners
+  .grid
+    = link_to 'http://liputan6.com', target: '_blank', class: 'media-partner col-2'
+      = image_tag 'logo/liputan6.png', class: 'media-partner__logo', alt: 'Liputan6'
+
+    = link_to 'http://dailysocial.net', target: '_blank', class: 'media-partner col-2'
+      = image_tag 'logo/dailysocial.png', class: 'media-partner__logo', alt: 'Dailysocial'
+
+    = link_to 'http://id.techinasia.com', target: '_blank', class: 'media-partner col-2'
+      = image_tag 'logo/techinasia.png', class: 'media-partner__logo', alt: 'Techinasia'
+
+    = link_to 'http://vidio.com', target: '_blank', class: 'media-partner col-2'
+      = image_tag 'logo/vidio.png', class: 'media-partner__logo', alt: 'Vidio'
+
+    = link_to 'http://appsco.id', target: '_blank', class: 'media-partner col-2'
+      = image_tag 'logo/appsco.png', class: 'media-partner__logo', alt: 'AppsCo'
+
+section.section#communities
+  header.header Communities
+  .grid
+    = link_to 'http://www.meetup.com/jakartarb/', target: '_blank', class: 'community col-2'
+      = image_tag 'logo/id-ruby.png', class: 'community__logo', alt: 'id-ruby'
+
+    = link_to 'http://www.meetup.com/JakartaJS/', target: '_blank', class: 'community col-2'
+      = image_tag 'logo/jakartajs.png', class: 'community__logo', alt: 'JakartaJS'
+
+    = link_to 'http://www.meetup.com/Python-ID/', target: '_blank', class: 'community col-2'
+      = image_tag 'logo/pythonid.jpg', class: 'community__logo', alt: 'PythonID'
+
+    = link_to 'http://www.meetup.com/Lambda-Jakarta/', target: '_blank', class: 'community col-2'
+      = image_tag 'logo/lambda-jakarta.jpg', class: 'community__logo', alt: 'Lambda Jakarta'
+
+    = link_to 'http://www.meetup.com/Meteor-Jakarta/', target: '_blank', class: 'community col-2'
+      = image_tag 'logo/meteor-jakarta.png', class: 'community__logo', alt: 'Meteor Jakarta'
+
+    = link_to 'http://www.phpindonesia.or.id', target: '_blank', class: 'community col-2'
+      = image_tag 'logo/phpindonesia.jpg', class: 'community__logo', alt: 'PHP Indonesia'
+
+
+#footer &copy; Copyright 2015 by GeekCamp&ensp;|&ensp;All Rights Reserved.

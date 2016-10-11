@@ -1,3 +1,6 @@
+- content_for :title do
+  | GeekCamp 2016 - The Biggest Tech-Savvy Conference in Indonesia
+
 ul#menu
  li: a href="#sponsors" Sponsors
  li: a href="#media-partners" Media Partners
@@ -22,18 +25,19 @@ ul#menu
 
   .spike
 
+section.section#organizer
+  header.header Organized by
+  .grid
+    = link_to 'http://www.kudo.co.id', target: '_blank', class: 'media-partner col-2'
+      = image_tag 'logo/kudo.png', alt: 'Kudo', class: 'media-partner__logo'
+
+    = link_to 'http://kmklabs.com', target: '_blank', class: 'media-partner col-2'
+      = image_tag 'logo/kmklabs.png', alt: 'KMKLabs', class: 'media-partner__logo'
+
 #location
   .header Location
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.274919358063!2d106.79462625145135!3d-6.227438695469963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1485e476a65%3A0x300c043104acc004!2sSenayan+City!5e0!3m2!1sid!2sid!4v1445520701170" width="100%" height="450" frameborder="0" style="border:0;pointer-events:none;" allowfullscreen></iframe>
 
-section.section#organizer
-  header.header Organized by
-  .grid
-    = link_to 'http://kmklabs.com', target: '_blank', class: 'media-partner col-2'
-      = image_tag 'logo/kmklabs.png', alt: 'KMKLabs', class: 'media-partner__logo'
-
-    = link_to 'http://www.kudo.co.id', target: '_blank', class: 'media-partner col-2'
-      = image_tag 'logo/kudo.png', alt: 'Kudo', class: 'media-partner__logo'
 
 section.section#sponsors
   header.header Sponsored by

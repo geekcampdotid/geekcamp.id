@@ -1,5 +1,5 @@
 - content_for :title do
-  | GeekCamp 2016 - The Biggest Tech-Savvy Conference in Indonesia
+  | GeekCamp 2017 - The Biggest Tech-Savvy Conference in Indonesia
 
 ul#menu
  li: a href="#sponsors" Sponsors
@@ -14,12 +14,12 @@ ul#menu
   .headline One Day Event&ensp;&middot;&ensp;30 Speakers&ensp;&middot;&ensp;2 Topic Areas (Technology & Design)
 
   .date-time
-    | June 2017
+    | July 15th, 2017
     br
     | The Hall 8th Floor, Senayan City, Jakarta
 
   .links
-    = link_to 'Get Your Ticket', '#', class: 'button'
+    = mail_to 'contact@geekcamp.id', 'Get Your Ticket', class: 'button', subject: "I want a ticket to GeekCamp 2017!"
     | &emsp;
     = link_to 'Last Year', year_2015_path, class: 'button'
 
@@ -28,6 +28,9 @@ ul#menu
 section.section#organizer
   header.header Organized by
   .grid
+    = link_to 'http://www.karir.com', target: '_blank', class: 'media-partner col-2'
+      = image_tag 'logo/karir.png', alt: 'Karir', class: 'media-partner__logo'
+
     = link_to 'http://kmklabs.com', target: '_blank', class: 'media-partner col-2'
       = image_tag 'logo/kmklabs.png', alt: 'KMKLabs', class: 'media-partner__logo'
 
@@ -38,25 +41,8 @@ section.section#organizer
 
 section.section#sponsors
   header.header Sponsored by
-  .grid
-    = link_to 'http://bukalapak.com', target: '_blank', class: 'media-partner col-2'
-      = image_tag 'logo/bukalapak.png', alt: 'Bukalapak', class: 'media-partner__logo'
-
-    = link_to 'http://www.karir.com', target: '_blank', class: 'media-partner col-2'
-      = image_tag 'logo/karir.png', alt: 'Karir', class: 'media-partner__logo'
-
-    = link_to 'http://veritrans.co.id', target: '_blank', class: 'media-partner col-2'
-      = image_tag 'logo/veritrans.png', alt: 'Veritrans', class: 'media-partner__logo'
-
-    = link_to 'http://suitmedia.com', target: '_blank', class: 'media-partner col-2'
-      = image_tag 'logo/suitmedia.png', alt: 'Suitmedia', class: 'media-partner__logo'
-
-    = link_to 'http://www.geekhunter.co', target: '_blank', class: 'media-partner col-2'
-      = image_tag 'logo/geekhunter.png', alt: 'Geekhunter', class: 'media-partner__logo'
-
-    = link_to 'http://www.kudo.co.id', target: '_blank', class: 'media-partner col-2'
-      = image_tag 'logo/kudo.png', alt: 'Kudo', class: 'media-partner__logo'
-
+  p.blank
+    | Contact us at #{ mail_to 'contact@geekcamp.id' } to help out!
 
 section.section#media-partners
   header.header Media Partners
@@ -92,5 +78,3 @@ section.section#communities
     = link_to 'http://www.phpindonesia.or.id', target: '_blank', class: 'community col-2'
       = image_tag 'logo/phpindonesia.jpg', class: 'community__logo', alt: 'PHP Indonesia'
 
-
-#footer &copy; Copyright 2016 by GeekCamp&ensp;|&ensp;All Rights Reserved.

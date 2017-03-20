@@ -19,9 +19,11 @@ ul#menu
     | The Hall 8th Floor, Senayan City, Jakarta
 
   .links
+    = link_to 'Submit a Paper', cfp_path, class: 'button'
+    | &emsp;
     = mail_to 'contact@geekcamp.id', 'Get Your Ticket', class: 'button', subject: "I want a ticket to GeekCamp 2017!"
     | &emsp;
-    = link_to 'Last Year', year_2015_path, class: 'button'
+    = link_to 'Last Time', year_2015_path, class: 'button'
 
   .spike
 

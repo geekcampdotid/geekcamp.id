@@ -1,0 +1,20 @@
+#event
+  .logo
+    = image_tag 'logo/geekcamp.png', class: 'logo__image', alt: 'Geekcamp'
+    .logo__caption The Biggest Tech-Savvy Conference in Indonesia
+
+  .headline One Day Event&ensp;&middot;&ensp;30 Speakers&ensp;&middot;&ensp;2 Topic Areas (Technology & Design)
+
+  .date-time
+    | July 15th, 2017
+    br
+    | The Hall 8th Floor, Senayan City, Jakarta
+
+  .links
+    = link_to 'Submit a Paper', cfp_path, class: 'button'
+    | &emsp;
+    = mail_to 'contact@geekcamp.id', 'Get Your Ticket', class: 'button', subject: "I want a ticket to GeekCamp 2017!"
+    | &emsp;
+    = link_to 'Last Time', year_2015_path, class: 'button'
+
+  .spike

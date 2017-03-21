@@ -6,7 +6,28 @@ ul#menu
   li: a href="#media-partners" Media Partners
   li: a href="#communities" Communities
 
-section.section#requirements
+#event
+  .logo
+    = image_tag 'logo/geekcamp.png', class: 'logo__image', alt: 'Geekcamp'
+    .logo__caption The Biggest Tech-Savvy Conference in Indonesia
+
+  .headline One Day Event&ensp;&middot;&ensp;30 Speakers&ensp;&middot;&ensp;2 Topic Areas (Technology & Design)
+
+  .date-time
+    | July 15th, 2017
+    br
+    | The Hall 8th Floor, Senayan City, Jakarta
+
+  .links
+    = link_to 'Submit a Paper', cfp_path, class: 'button'
+    | &emsp;
+    = mail_to 'contact@geekcamp.id', 'Get Your Ticket', class: 'button', subject: "I want a ticket to GeekCamp 2017!"
+    | &emsp;
+    = link_to 'Last Time', year_2015_path, class: 'button'
+
+  .spike
+
+section.cfp#requirements
   header.header
     | Requirements
   ul
@@ -15,7 +36,7 @@ section.section#requirements
     li Paper must have a title and an abstract of around 100 words.
     /li Paper contents must adhere to our Code of Conduct.
 
-section.section#submission
+section.cfp#submission
   header.header
     | Submission Policy
   ul
@@ -24,14 +45,14 @@ section.section#submission
     li You can submit any number of times.
     li You will retain copyright to your talk and any supporting materials.
 
-section.section#review
+section.cfp#review
   header.header
     | Review &amp; Selection Process
   ul
     li Reviews are double blind. We take into account novelty, depth, practical impact, and presentation.
     li Final selection is done by the organizing committee.
 
-section.section#reimbursement
+section.cfp#reimbursement
   header.header
     | Reimbursement
   ul

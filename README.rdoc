@@ -5,24 +5,12 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+* Ruby version: <tt>2.3</tt>
 
-* System dependencies
+* System dependencies: <tt>postgresql</tt>, <tt>libpq-dev`</tt>
 
-* Configuration
+* Database creation: <tt>rake db:create</tt>
 
-* Database creation
+* Development server: <tt>rails server</tt>`
 
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
-
-
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+* Deployment instructions: <tt>/dev/null</tt>

@@ -144,9 +144,8 @@ html, body {
   border-bottom: 1px solid $red;
   width: 400px;
   padding-bottom: 10px;
-  margin: auto;
+  margin: 40px auto;
   position: relative;
-  top: -40px;
   text-align: center;
 
   &:before {
@@ -157,7 +156,7 @@ html, body {
     display: inline-block;
     position: absolute;
     left: 185px;
-    top: 40px;
+    top: 36px;
     z-index: 1;
   };
 
@@ -194,9 +193,6 @@ html, body {
 
 #media-partners {
   text-align: center;
-  position: relative;
-  top: 100px;
-  margin-bottom: 200px;
 }
 
 #sponsors,
@@ -205,8 +201,6 @@ html, body {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 11px;
   position: relative;
-  padding-top: 50px;
-  padding-bottom: 20px;
 }
 
 #speakers {
@@ -264,7 +258,7 @@ html, body {
 }
 
 .section {
-  margin: 0 auto;
+  margin: 0 auto 80px;
   width: 1000px;
 }
 

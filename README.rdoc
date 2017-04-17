@@ -5,9 +5,9 @@ application up and running.
 
 Things you may want to cover:
 
-* Ruby version: <tt>2.3</tt>
+* Ruby version: <tt>2.4</tt>
 
-* System dependencies: <tt>postgresql</tt>, <tt>libpq-dev`</tt>
+* System dependencies: <tt>postgresql</tt>, <tt>libpq-dev</tt>
 
 * Database creation: <tt>rake db:create</tt>
 

@@ -1,9 +1,12 @@
 class PagesController < ApplicationController
 
+  def home
+  end
+
   def cfp
   end
 
-  def year_2015
+  def home_2015
   end
 
 end

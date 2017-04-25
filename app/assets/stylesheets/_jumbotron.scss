@@ -1,0 +1,53 @@
+.jumbotron {
+  text-align: center;
+  position: relative;
+  padding-top: 10rem;
+  padding-bottom: 15rem;
+  background-image: image-url('background.jpg');
+  background-size: cover;
+}
+
+
+.jumbotron__logo {
+
+}
+
+.jumbotron__logo_image {
+  max-width: 95%;
+}
+
+.jumbotron__logo_caption {
+  color: $red;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  font-size: 2rem;
+}
+
+.jumbotron__headline {
+  margin-top: 3rem;
+  font-size: 1.6rem;
+}
+
+.jumbotron__datetime {
+  margin-top: 5rem;
+  font-size: 2rem;
+}
+
+.jumbotron__spike {
+  background: image-url('spike.png') repeat-x;
+
+  -moz-transform: scaleY(-1);
+  -o-transform: scaleY(-1);
+  -webkit-transform: scaleY(-1);
+
+  transform: scaleY(-1);
+  filter: FlipV;
+  -ms-filter: "FlipV";
+
+  position: absolute;
+  bottom: -1px;
+
+  width: 100%;
+  height: 50px;
+  background-size: 500px;
+}

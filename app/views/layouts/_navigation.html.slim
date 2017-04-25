@@ -4,10 +4,10 @@
     = image_tag 'logo/geekcamp.png', alt: 'Geekcamp'
 
   ul.navigation__links
-    /li= link_to "Schedule",       root_path(anchor: 'schedule'),  class: 'navigation__link'
-    li= link_to "Speakers",       root_path(anchor: 'speakers'),  class: 'navigation__link'
-    li= link_to "Sponsors",       root_path(anchor: 'sponsors'),  class: 'navigation__link'
-    /li= link_to "Need Help?",     root_path(anchor: 'need-help'), class: 'navigation__link'
-    li= link_to "GeekCamp 2015",  year_2015_path,                 class: 'navigation__link'
+    /li= link_to "Schedule",      home_path(anchor: 'schedule'),  class: 'navigation__link'
+    li= link_to "Speakers",       home_path(anchor: 'speakers'),  class: 'navigation__link'
+    li= link_to "Sponsors",       home_path(anchor: 'sponsors'),  class: 'navigation__link'
+    /li= link_to "Need Help?",    home_path(anchor: 'need-help'), class: 'navigation__link'
+    li= link_to "GeekCamp 2015",  home_2015_path,                 class: 'navigation__link'
     li= mail_to "contact@geekcamp.id", 'Get Tickets',             class: 'navigation__link button', subject: "I want a ticket to GeekCamp 2017!"
 

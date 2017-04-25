@@ -1,27 +1,25 @@
 - content_for :title do
   | GeekCamp 2015 - The Biggest Tech-Savvy Conference in Indonesia
 
-#event
-  .logo
-    = image_tag 'logo/geekcamp.png', class: 'logo__image', alt: 'Geekcamp'
-    .logo__caption The Biggest Tech-Savvy Conference in Indonesia
+.jumbotron
 
-  .headline One Day Event&ensp;&middot;&ensp;30 Speakers&ensp;&middot;&ensp;3 Topic Areas (Technology, UI/UX, Entrepreneurship)
+  .jumbotron__logo
+    = image_tag 'logo/geekcamp.png', class: 'jumbotron__logo_image', alt: 'GeekCamp'
+    .jumbotron__logo_caption The Biggest Tech-Savvy Conference in Indonesia
 
-  .date-time
+  .jumbotron__headline One Day Event&ensp;&middot;&ensp;30 Speakers&ensp;&middot;&ensp;3 Topic Areas (Technology, UI/UX, Entrepreneurship)
+
+  .jumbotron__datetime
     | October 24, 2015
     br
-    <div style="font-size: 16px; margin-top: 5px;">The Hall 8th Floor, Senayan City, Jakarta</div>
+    | The Hall 8th Floor, Senayan City, Jakarta
 
-  br
-  br
-  br
+  = link_to "https://play.google.com/store/apps/details?id=suitmedia.geekcamp.android", target: "_blank", style: "position: absolute; left: 50%; margin-left: -65px; bottom: 8rem;"
+    = image_tag "https://developer.android.com/images/brand/en_generic_rgb_wo_45.png", alt: "Get it on Google Play"
 
-  <a href="https://play.google.com/store/apps/details?id=suitmedia.geekcamp.android" target="_blank">
-    <img alt="Get it on Google Play" src="https://developer.android.com/images/brand/en_generic_rgb_wo_45.png" />
-  </a>
+  .jumbotron__spike
 
-  .spike
+
 
 #schedule
   header.header Schedule
@@ -467,7 +465,7 @@ section.section#location
   .header Location
   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.274919358063!2d106.79462625145135!3d-6.227438695469963!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1485e476a65%3A0x300c043104acc004!2sSenayan+City!5e0!3m2!1sid!2sid!4v1445520701170" width="100%" height="450" frameborder="0" style="border:0;pointer-events:none;" allowfullscreen></iframe>
 
-section.section#organizer
+section.section#organizers
   header.header Organized by
   .grid
     = link_to 'https://www.kmkonline.co.id/labs', target: '_blank', class: 'media-partner col-2'

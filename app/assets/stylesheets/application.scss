@@ -9,93 +9,116 @@
  * compiled file so the styles you add here take precedence over styles defined in any styles
  * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
  * file per style scope.
- *
  */
 
-@import "schedule";
-
 $red: #EC2B46;
+$grey: #D5E2E2;
 
-html, body {
-  margin: 0;
-  padding: 0;
+@mixin transition($property, $time, $effect, $delay){
+  -webkit-transition: $property $time $effect $delay;
+  transition: $property $time $effect $delay;
 }
 
-#menu {
-  list-style: none;
-  text-align: center;
-  margin-top: 20px;
+@import "navigation";
+@import "schedule";
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+html {
+  height: 100%;
+  font-size: 10px;
+  box-sizing: border-box;
+}
+
+@media screen and (max-width: 980px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.6rem;
   position: relative;
-  z-index: 1;
+  margin: 0;
+  min-height: 100%;
+  box-sizing: border-box;
+  /* for the navigation :-/ */
+  padding-top: 7rem;
+  padding-bottom: 6rem;
+  /* for the footer :-/ */
+}
 
-  li {
-    display: inline-block;
-    margin: 0 50px;
+a {
+  text-decoration: none;
+  color: $red;
+  @include transition(all, .3s, ease-out, 0s);
 
-    a {
-      color: black;
-      text-decoration: none;
-      text-transform: uppercase;
-      font-family: Arial, Helvetica, sans-serif;
-      font-size: 12px;
-      font-weight: bold;
+  &:hover,
+  .hover {
+    color: black
+  }
+}
 
-      &:hover {
-        color: $red;
-      };
-    }
+.button {
+  border: 1px solid darken($red, 15%);
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  margin: 1rem 0;
+
+  text-decoration: none;
+  color: white;
+  background: $red;
+  display: inline-block;
+
+  &:hover {
+    border-color: darken($red, 25%);
+    background: darken($red, 15%);
+    color: white;
   }
 }
 
 #event {
   text-align: center;
   position: relative;
-  top: -70px;
   padding-top: 150px;
   padding-bottom: 100px;
   background-image: image-url('background.jpg');
   background-size: cover;
 
   .logo {
-    .logo__caption {
-      color: $red;
-      font-family: Arial, Helvetica, sans-serif;
-      font-weight: bold;
-      margin-top: 15px;
-      font-size: 19px;
-    }
+
+  }
+
+  .logo__image {
+    max-width: 95%;
+  }
+
+  .logo__caption {
+    color: $red;
+    font-weight: bold;
+    margin-top: 1.5rem;
+    font-size: 2rem;
   }
 
   .headline {
-    margin-top: 30px;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 16px;
+    margin-top: 3rem;
+    font-size: 1.6rem;
   }
 
   .date-time {
-    margin-top: 50px;
-    font-size: 20px;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  .links {
-    margin-top: 20px;
-  }
-
-  .sponsorship {
-    margin-top: 10px;
-
-    a {
-      font-size: 12px;
-      font-family: Arial, Helvetica, sans-serif;
-      color: $red;
-      text-decoration: none;
-      font-style: oblique;
-
-      &:hover {
-        text-decoration: underline;
-      }
-    }
+    margin-top: 5rem;
+    font-size: 2rem;
   }
 
   .spike {
@@ -114,23 +137,6 @@ html, body {
   }
 }
 
-.button {
-  border: 2px solid $red;
-  border-radius: 5px;
-  padding: 10px 20px;
-
-  text-decoration: none;
-  color: $red;
-  background: rgba(255, 255, 255, 0.8);
-  font-family: Arial, Helvetica, sans-serif;
-  display: inline-block;
-
-
-  &:hover {
-    background-color: $red;
-    color: white;
-  };
-}
 
 #location {
   text-align: center;
@@ -138,38 +144,14 @@ html, body {
 }
 
 .header {
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 24px;
-  line-height: 24px;
-  border-bottom: 1px solid $red;
-  width: 400px;
-  padding-bottom: 10px;
-  margin: 40px auto;
-  position: relative;
+  font-size: 2.8rem;
+  color: $red;
+  text-transform: uppercase;
+  padding-bottom: 1.75rem;
+  border-bottom: 1px dotted $grey;
+  max-width: 50%;
+  margin: 2.5rem auto;
   text-align: center;
-
-  &:before {
-    content: "\00b7";
-    font-size: 72px;
-    line-height: 0;
-    color: $red;
-    display: inline-block;
-    position: absolute;
-    left: 185px;
-    top: 36px;
-    z-index: 1;
-  };
-
-  &:after {
-    content: "\00b7";
-    font-size: 150px;
-    line-height: 0;
-    color: white;
-    display: inline-block;
-    position: absolute;
-    left: 172px;
-    top: 40px;
-  };
 }
 
 .grid {
@@ -178,9 +160,8 @@ html, body {
 
 .blank {
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 22px;
-  padding: 25px 0;
+  font-size: 2.2rem;
+  padding: 2.5rem 0;
 }
 
 .blank a {
@@ -198,8 +179,7 @@ html, body {
 #sponsors,
 #footer {
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 11px;
+  font-size: 1.2rem;
   position: relative;
 }
 
@@ -209,10 +189,9 @@ html, body {
 
 .speaker {
   text-align: center;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 12px;
+  font-size: 1.2rem;
   display: inline-block;
-  width: 250px;
+  width: 25rem;
 }
 
 .speaker--more {
@@ -222,10 +201,10 @@ html, body {
     content: "more speakers to come";
     display: "block";
     color: #999;
-    font-size: 24px;
+    font-size: 2.4rem;
     position: absolute;
     left: 0;
-    top: 32px;
+    top: 3.2rem;
   }
 }
 
@@ -239,7 +218,7 @@ html, body {
 }
 
 .speaker__name {
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: bold;
 }
 
@@ -249,6 +228,7 @@ html, body {
 
 .media-partner__logo  {
   vertical-align: middle;
+  max-width: 75%;
 }
 
 .col-2 {
@@ -259,19 +239,16 @@ html, body {
 
 .section {
   margin: 0 auto 80px;
-  width: 1000px;
 }
 
 .section--cfp {
   margin: 0 auto 50px;
-  width: 800px;
 }
 .section--cfp header {
   top: auto;
 }
 .section--cfp ul {
   margin: 30px auto;
-  font-family: Arial, Helvetica, sans-serif;
 }
 
 .speaker-topic {
@@ -296,8 +273,7 @@ html, body {
 
 .speaker-topic__name,
 .speaker-topic__topic {
-  font-size: 14px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 1.4rem;
 }
 
 .speaker-topic__topic {
@@ -325,26 +301,27 @@ html, body {
     color: #D5E2E2;
     display: block;
     content: "+";
-    font-size: 48px;
+    font-size: 4.8rem;
     position: absolute;
     top: 0;
-    left: 11px;
+    left: 1rem;;
     line-height: 48px;
   }
 }
 .speaker-topic__name--more {
   color: #999;
-  font-size: 14px;
+  font-size: 1.4rem;
   font-style: oblique;
   position: relative;
-  top: 10px;
+  top: 1rem;
 }
 
 .community {
   text-align: center;
-  margin-bottom: 50px;
+  margin-bottom: 5rem;
 }
 
 .community__logo {
   vertical-align: middle;
+  max-width: 75%;
 }

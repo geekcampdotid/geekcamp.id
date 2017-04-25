@@ -1,0 +1,32 @@
+# -
+#   method: r301
+#   from: !ruby/regexp '/(.*)/'
+#   to:   'https://www.geekcamp.id$1'
+#   options:
+#     host:   'geekcamp.id'
+#
+# -
+#   method: r301
+#   from: !ruby/regexp '/(.*)/'
+#   to:   'https://www.geekcamp.id$1'
+#   options:
+#     host:   'www.geekcamp.id'
+#     scheme: 'http'
+
+-
+  method: r301
+  from: !ruby/regexp '/(.*)/'
+  to:   'http://www.geekcamp.dev:3000$1'
+  options:
+    host:   'geekcamp.dev'
+    port:   3000
+
+
+# ----------- That's the hosts, now just redirects on geekcamp.id --------------
+
+
+-
+  method: r301
+  from: !ruby/regexp '/^\/tickets?(.*)/'
+  to:   'https://www.bukalapak.com/p/tiket-voucher/tiket-voucher-lainnya/83qwu2-jual-tiket-geekcamp-15-juli-2017$1'
+

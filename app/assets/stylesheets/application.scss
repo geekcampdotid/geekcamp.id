@@ -194,9 +194,12 @@ a {
 
 .section--cfp {
   margin: 0 auto 50px;
+  padding: 0 2rem;
+  max-width: 500px;
 }
 .section--cfp header {
   top: auto;
+  max-width: inherit;
 }
 .section--cfp ul {
   margin: 30px auto;

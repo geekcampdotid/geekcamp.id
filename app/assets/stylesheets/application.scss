@@ -20,6 +20,7 @@ $white: #FFFFFF;
   transition: $property $time $effect $delay;
 }
 
+@import "cfp";
 @import "jumbotron";
 @import "navigation";
 @import "participate";
@@ -104,6 +105,9 @@ a {
   max-width: 50%;
   margin: 2.5rem auto;
   text-align: center;
+}
+.header.m--full {
+  max-width: inherit;
 }
 
 .grid {
@@ -196,19 +200,6 @@ a {
 .section {
   margin: 0 auto 80px;
   padding: 0 1rem;
-}
-
-.section--cfp {
-  margin: 0 auto 50px;
-  padding: 0 2rem;
-  max-width: 500px;
-}
-.section--cfp header {
-  top: auto;
-  max-width: inherit;
-}
-.section--cfp ul {
-  margin: 30px auto;
 }
 
 .speaker-topic {

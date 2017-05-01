@@ -3,14 +3,14 @@
 
 = render '2017/jumbotron'
 
-
 section.cfp__section
   header.header.m--full
     | Requirements
   ul.cfp__list
     li Paper and actual talk must be in English or Bahasa Indonesia.
     li Paper must have a title and an abstract of around 100 words.
-    li One talk slot is 20 minutes long, including Q&A.
+    li Main stage talks are 20 minutes long, including Q&A.
+    li Lightening talks are 10 minutes long, including Q&A.
     /li Paper contents must adhere to our Code of Conduct.
 
 section.cfp__section
@@ -37,5 +37,5 @@ section.cfp__section
     li We will reserve one ticket at super early bird price for speakers who aren't selected.
 
 section.cfp__section.m--center
-  = mail_to 'contact+cfp@geekcamp.id', 'contact@geekcamp.id', subject: "My talk for GeekCamp 2017!", class: 'button'
+  = link_to 'Submit your talk', new_cfp_path, class: 'button'
 

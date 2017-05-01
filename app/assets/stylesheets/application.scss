@@ -25,6 +25,7 @@ $white: #FFFFFF;
 @import "navigation";
 @import "participate";
 @import "schedule";
+@import "footer";
 
 * {
   margin: 0;
@@ -132,15 +133,10 @@ a {
   text-align: center;
 }
 
-#sponsors,
-#footer {
+#sponsors {
   text-align: center;
   font-size: 1.2rem;
   position: relative;
-}
-
-#footer {
-  margin: 3rem 0 2rem;
 }
 
 #speakers {

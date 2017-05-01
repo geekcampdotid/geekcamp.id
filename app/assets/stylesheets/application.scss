@@ -25,6 +25,7 @@ $white: #FFFFFF;
 @import "navigation";
 @import "participate";
 @import "schedule";
+@import "sponsor";
 @import "footer";
 
 * {
@@ -146,8 +147,9 @@ a {
 .speaker {
   text-align: center;
   font-size: 1.2rem;
+  margin: 2rem 0;
   display: inline-block;
-  width: 25rem;
+  width: 20rem;
 }
 
 .speaker--more {
@@ -168,8 +170,7 @@ a {
   position: relative;
   border: 5px solid #D5E2E2;
   border-radius: 50%;
-  width: 150px;
-  height: 150px;
+  width: 80%;
   margin: auto;
 }
 

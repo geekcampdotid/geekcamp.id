@@ -1,0 +1,41 @@
+.sponsor__section {
+  margin: 6rem 0;
+}
+
+ul.sponsor__opportunities {
+  list-style: none;
+  display: flex;
+}
+
+// @media screen and (max-width: 320px) {
+//   ul.sponsor__opportunities {
+//     display: block;
+//   }
+//
+//   li.sponsor__opportunity {
+//     width: 100%;
+//   }
+// }
+
+li.sponsor__opportunity {
+  width: 33%;
+  padding: 0 1rem;
+  text-align: center;
+
+  img {
+    width: 100%;
+    max-width: 32rem;
+  }
+
+  p {
+    color: $red;
+    padding-top: 1rem;
+  }
+}
+
+#sponsor-form {
+  display: block;
+  margin: 0 auto;
+  width: 760px;
+  height: 1150px;
+}

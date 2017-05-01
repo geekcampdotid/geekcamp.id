@@ -12,4 +12,7 @@ class PagesController < ApplicationController
   def new_cfp
   end
 
+  def sponsor
+  end
+
 end

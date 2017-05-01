@@ -1,0 +1,32 @@
+- content_for :title do
+  | Sponsor | GeekCamp 2017
+
+= render '2017/jumbotron'
+
+section.sponsor__section
+  header.header.m--full
+    | Branding Opportunities
+
+  ul.sponsor__opportunities
+    li.sponsor__opportunity
+      = link_to "sponsor/branding-opportunities.jpg", target: '_blank' do
+      = image_tag "sponsor/branding-opportunities.jpg", alt: 'Branding Opportunities'
+      p Branding Opportunities
+
+    li.sponsor__opportunity
+      = link_to "sponsor/engage-engineers.jpg", target: '_blank' do
+        = image_tag "sponsor/engage-engineers.jpg", alt: 'Engage Engineers'
+      p Engage Engineers
+
+    li.sponsor__opportunity
+      = link_to "sponsor/exhibition-space.jpg", target: '_blank' do
+        = image_tag "sponsor/exhibition-space.jpg", alt: 'Exhibition Space'
+      p Exhibition Space
+
+
+section.sponsor__section
+  header.header.m--full
+    | Be A Sponsor
+
+  iframe#sponsor-form src="https://docs.google.com/forms/d/e/1FAIpQLSdca4QXdri2cgZhjOkzw6P9xxRD9otJsBh0-0wese6Bm8H1WA/viewform?embedded=true" width="760" height="1150" frameborder="0" marginheight="0" marginwidth="0"
+    | Loading...

@@ -51,10 +51,11 @@ describe "rack-rewrite" do
     response[1]['Location']
   end
 
-  it "redirects /ticket to BukaLapak" do
-    expect(get('/ticket')).to                 eq('https://www.bukalapak.com/p/tiket-voucher/tiket-voucher-lainnya/83qwu2-jual-tiket-geekcamp-15-juli-2017')
-    expect(get('/tickets')).to                eq('https://www.bukalapak.com/p/tiket-voucher/tiket-voucher-lainnya/83qwu2-jual-tiket-geekcamp-15-juli-2017')
-    expect(get('/ticket?utm_source=bbm')).to  eq('https://www.bukalapak.com/p/tiket-voucher/tiket-voucher-lainnya/83qwu2-jual-tiket-geekcamp-15-juli-2017?utm_source=bbm')
+  it "redirects /pay to BukaLapak" do
+    expect(get('/beli')).to                eq('https://www.bukalapak.com/p/tiket-voucher/tiket-voucher-lainnya/83qwu2-jual-tiket-geekcamp-15-juli-2017')
+    expect(get('/buy')).to                 eq('https://www.bukalapak.com/p/tiket-voucher/tiket-voucher-lainnya/83qwu2-jual-tiket-geekcamp-15-juli-2017')
+    expect(get('/pay')).to                 eq('https://www.bukalapak.com/p/tiket-voucher/tiket-voucher-lainnya/83qwu2-jual-tiket-geekcamp-15-juli-2017')
+    expect(get('/pay?utm_source=bbm')).to  eq('https://www.bukalapak.com/p/tiket-voucher/tiket-voucher-lainnya/83qwu2-jual-tiket-geekcamp-15-juli-2017?utm_source=bbm')
   end
 
 end

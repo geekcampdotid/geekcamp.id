@@ -3,6 +3,9 @@ class PagesController < ApplicationController
   def home
   end
 
+  def ticket
+  end
+
   def home_2015
   end
 

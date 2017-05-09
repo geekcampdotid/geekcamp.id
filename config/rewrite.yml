@@ -27,6 +27,6 @@
 
 -
   method: r301
-  from: !ruby/regexp '/^\/tickets?(.*)/'
+  from: !ruby/regexp '/^\/(?:beli|buy|pay)(.*)/'
   to:   'https://www.bukalapak.com/p/tiket-voucher/tiket-voucher-lainnya/83qwu2-jual-tiket-geekcamp-15-juli-2017$1'
 

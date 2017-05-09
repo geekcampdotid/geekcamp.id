@@ -36,16 +36,8 @@
 .jumbotron__spike {
   background: image-url('spike.png') repeat-x;
 
-  -moz-transform: scaleY(-1);
-  -o-transform: scaleY(-1);
-  -webkit-transform: scaleY(-1);
-
-  transform: scaleY(-1);
-  filter: FlipV;
-  -ms-filter: "FlipV";
-
   position: absolute;
-  bottom: -1px;
+  bottom: -10px;
 
   width: 100%;
   height: 50px;

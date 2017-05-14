@@ -15,6 +15,7 @@ gem 'rack-rewrite',           github: 'jtrupiano/rack-rewrite'
 
 gem 'slim-rails'
 
+gem 'therubyracer'
 gem 'uglifier',   '>= 1.3.0'
 gem 'sass-rails', '~> 5.0'
 

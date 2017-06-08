@@ -3,6 +3,8 @@
   .navigation__logo
     = link_to home_path do
       = image_tag 'logo/geekcamp.png', alt: 'Geekcamp'
+      = link_to "Get Tickets", ticket_path, class: 'navigation__link button navigation__mobile'
+
 
   ul.navigation__links
     /li= link_to "Schedule",      home_path(anchor: 'schedule'),  class: 'navigation__link'
@@ -11,5 +13,5 @@
     li= link_to "Sponsor",        sponsor_path,                   class: 'navigation__link'
     /li= link_to "Need Help?",    home_path(anchor: 'need-help'), class: 'navigation__link'
     li= link_to "GeekCamp 2015",  home_2015_path,                 class: 'navigation__link'
-    li= link_to "Get Tickets",    ticket_path,                    class: 'navigation__link button'
+    li= link_to "Get Tickets",    ticket_path,                    class: 'navigation__link button navigation__desktop'
 

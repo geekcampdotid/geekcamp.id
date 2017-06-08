@@ -1,0 +1,254 @@
+.speaker {
+    width: 50%;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 1.2rem;
+    margin: 2rem 0;
+    display: inline-block;
+    vertical-align: top;
+
+    &__container {
+      margin-right: auto;
+      margin-left: auto;
+      padding: 18px 15px;
+    }
+
+    &--more {
+      background-color: #EBF1F1;
+
+      &:after {
+        content: "more speakers to come";
+        display: "block";
+        color: #999;
+        font-size: 2.4rem;
+        position: absolute;
+        left: 0;
+        top: 3.2rem;
+      }
+    }
+
+    &__image {
+      position: relative;
+      border: 5px solid rgba(213, 226, 226, 0.35);
+      border-radius: 50%;
+      width: 85%;
+      margin: 0 auto 1rem;
+    }
+
+    &__name {
+      font-size: 1.35rem;
+      color: #EC2B46;
+      letter-spacing: 0.2rem;
+      font-weight: bold;
+      text-transform: uppercase;
+      margin-bottom: 0.6rem;
+      line-height: 1.7rem;
+    }
+
+    &__title {
+      color: #8d93a0;
+      font-size: 1.3rem;
+      line-height: 1.6rem;
+    }
+}
+
+/* SPEAKER TOPIC */
+
+#topics {
+    background-color: #F8F8F8;
+    margin: 0 -10px;
+}
+
+.speaker-topic {
+  margin-bottom: 30px;
+  text-align: left;
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.speaker-topic__container {
+    margin-right: auto;
+    margin-left: auto;
+    padding: 18px 25px;
+}
+
+.speaker-topic__image {
+  border: 3px solid #D5E2E2;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  margin-right: 15px;
+  margin-top: -8px;
+  vertical-align: -webkit-baseline-middle;
+}
+
+.speaker-topic__image.m--blank {
+  padding: 6px;
+  width: 60px;
+  height: 60px;
+  opacity: 0.5;
+  vertical-align: -webkit-baseline-middle;
+}
+
+
+.speaker-topic__name {
+  margin-bottom: 2px;
+  color: #EC2B46;
+  letter-spacing: 0.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.speaker-topic__identity {
+    width: calc(100% - 80px);
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.speaker-topic__title {
+    font-size: 1.3rem;
+    color: #8d93a0;
+}
+
+.speaker-topic__name {
+  font-size: 1.35rem;
+}
+
+.speaker-topic__topic {
+    font-size: 1.3rem;
+    padding-top: 8px;
+}
+
+.speaker-topic__topic {
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+  display: block;
+
+  &[href] {
+    color: #1D62AE;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+.speaker-topic__topic--to-be-confirmed {
+  font-weight: normal;
+  font-style: oblique;
+}
+.speaker-topic__image--more {
+  background-color: #EBF1F1;
+  position: relative;
+
+  &:after {
+    color: #D5E2E2;
+    display: block;
+    content: "+";
+    font-size: 4.8rem;
+    position: absolute;
+    top: 0;
+    left: 1rem;;
+    line-height: 48px;
+  }
+}
+.speaker-topic__name--more {
+  color: #999;
+  font-size: 1.4rem;
+  font-style: oblique;
+  position: relative;
+  top: 1rem;
+}
+
+
+@media screen and (min-width: 30em) and (max-width: 67em) {
+    .w-25-m {
+        width: 25%;
+    }
+
+    .w-33-m {
+        width: 33.33%;
+        display: inline-block !important;
+    }
+
+    .w-50-m {
+        width: 50%;
+    }
+
+    .speaker {
+        &__image {
+          width: 80%;
+          margin: 0 auto 1.6rem;
+        }
+
+        &__name {
+            font-size: 1.65rem;
+        }
+
+        &__title {
+            font-size: 1.55rem;
+        }
+    }
+
+    .speaker-topic {
+        &__name {
+            font-size: 1.4rem;
+        }
+
+        &:first-child {
+            margin-top: 2rem;
+        }
+    }
+}
+
+@media screen and (min-width: 67em) {
+    .w-25-l {
+        width: 25%;
+    }
+
+    .w-33-l {
+        width: 33.33%;
+        display: inline-block !important;
+    }
+
+    .w-50-l {
+        width: 50%;
+    }
+
+    .speaker {
+
+        &__container {
+            max-width: 63em;
+        }
+
+        &__image {
+          width: 80%;
+          margin: 0 auto 1.6rem;
+        }
+
+        &__name {
+            font-size: 1.65rem;
+        }
+
+        &__title {
+            font-size: 1.55rem;
+        }
+    }
+
+    .speaker-topic {
+        &__container {
+            max-width: 63em;
+        }
+
+        &__name {
+            font-size: 1.4rem;
+        }
+
+        &:first-child {
+            margin-top: 2rem;
+        }
+    }
+}

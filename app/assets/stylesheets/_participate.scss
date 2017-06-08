@@ -4,13 +4,13 @@
 }
 
 .participate {
-  display: flex;
+  overflow: hidden;
   padding: 3rem;
 }
 
 .participate__half {
-  width: 50%;
   padding: 0 3rem;
+  display: inline-block;
 }
 
 .participate__header {
@@ -34,7 +34,7 @@
     color: $white;
   }
 
-  a:hover { 
+  a:hover {
     color: $white;
     text-decoration: underline;
   }

@@ -1,5 +1,13 @@
 section.section#sponsors
   header.header Sponsored by
+  .grid
+    = link_to 'https://www.akamai.com/?utm_source=geekcamp', target: '_blank', class: 'col-2'
+      = image_tag 'logo/akamai--small.png', class: 'sponsor__logo', alt: 'akamai'
+
+    = link_to 'https://www.bbm.com/?utm_source=geekcamp', target: '_blank', class: 'col-2'
+      = image_tag 'logo/bbm--small.png', class: 'community__logo', alt: 'bbm'
+
+
   p.blank
     = link_to "Become a sponsor!", sponsor_path, class: 'button'
 

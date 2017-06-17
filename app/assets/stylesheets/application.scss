@@ -11,9 +11,10 @@
  * file per style scope.
  */
 
-$red: #EC2B46;
-$grey: #D5E2E2;
-$white: #FFFFFF;
+$red:       #EC2B46;
+$grey:      #D5E2E2;
+$grey_dark: #363636;
+$white:     #FFFFFF;
 
 @mixin transition($property, $time, $effect, $delay){
   -webkit-transition: $property $time $effect $delay;
@@ -22,6 +23,7 @@ $white: #FFFFFF;
 
 @import "cfp";
 @import "jumbotron";
+@import "about";
 @import "navigation";
 @import "participate";
 @import "schedule";
@@ -47,19 +49,25 @@ $white: #FFFFFF;
 
 html {
   height: 100%;
-  font-size: 10px;
+  font-size: 12px;
   box-sizing: border-box;
+}
+
+.container {
+  max-width: 72rem;
+  margin: 0 auto;
+  padding: 0 2rem;
 }
 
 @media screen and (max-width: 980px) {
   html {
-    font-size: 9px;
+    font-size: 10px;
   }
 }
 
 @media screen and (max-width: 640px) {
   html {
-    font-size: 10px;
+    font-size: 8px;
   }
 }
 

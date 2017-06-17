@@ -1,0 +1,37 @@
+.about {
+  background: $grey_dark;
+  padding: 5rem 0;
+  margin: 0 auto 6rem;
+}
+
+.about__header {
+  font-size: 3rem;
+  color: $red;
+  text-transform: uppercase;
+  margin-bottom: 2rem;
+
+  span {
+    padding-right: 1rem;
+  }
+
+  .m--white {
+    color: $white;
+  }
+
+  .m--red {
+    color: $red;
+  }
+}
+
+.about__description {
+  color: $white;
+  line-height: 150%;
+  text-indent: 2rem;
+
+  .m--sidenote {
+    color: darken($white, 25%);
+    font-size: 0.9em;
+    padding: 0 1rem 0 0.5em;
+  }
+}
+

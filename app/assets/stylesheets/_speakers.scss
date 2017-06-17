@@ -93,7 +93,6 @@
   vertical-align: -webkit-baseline-middle;
 }
 
-
 .speaker-topic__name {
   margin-bottom: 2px;
   color: #EC2B46;
@@ -219,11 +218,6 @@
     }
 
     .speaker {
-
-        &__container {
-            max-width: 63em;
-        }
-
         &__image {
           width: 80%;
           margin: 0 auto 1.6rem;
@@ -239,10 +233,6 @@
     }
 
     .speaker-topic {
-        &__container {
-            max-width: 63em;
-        }
-
         &__name {
             font-size: 1.4rem;
         }

@@ -2,7 +2,6 @@
     width: 50%;
     padding: 0.5rem;
     text-align: center;
-    font-size: 1.2rem;
     margin: 2rem 0;
     display: inline-block;
     vertical-align: top;
@@ -38,7 +37,6 @@
     &__name {
       font-size: 1.35rem;
       color: #EC2B46;
-      letter-spacing: 0.2rem;
       font-weight: bold;
       text-transform: uppercase;
       margin-bottom: 0.6rem;
@@ -55,8 +53,7 @@
 /* SPEAKER TOPIC */
 
 #topics {
-    background-color: #F8F8F8;
-    margin: 0 -10px;
+  background-color: #F8F8F8;
 }
 
 .speaker-topic {
@@ -182,14 +179,6 @@
           width: 80%;
           margin: 0 auto 1.6rem;
         }
-
-        &__name {
-            font-size: 1.65rem;
-        }
-
-        &__title {
-            font-size: 1.55rem;
-        }
     }
 
     .speaker-topic {
@@ -222,21 +211,9 @@
           width: 80%;
           margin: 0 auto 1.6rem;
         }
-
-        &__name {
-            font-size: 1.65rem;
-        }
-
-        &__title {
-            font-size: 1.55rem;
-        }
     }
 
     .speaker-topic {
-        &__name {
-            font-size: 1.4rem;
-        }
-
         &:first-child {
             margin-top: 2rem;
         }

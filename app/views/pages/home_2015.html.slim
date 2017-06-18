@@ -1,25 +1,26 @@
 - content_for :title do
   | GeekCamp 2015 - The Biggest Tech-Savvy Conference in Indonesia
 
-.jumbotron
+.jumbotron.m--old 
 
   .jumbotron__logo
     = image_tag 'logo/geekcamp.png', class: 'jumbotron__logo_image', alt: 'GeekCamp'
-    .jumbotron__logo_caption The Biggest Tech-Savvy Conference in Indonesia
+    .jumbotron__headline.m--red The Biggest Tech-Savvy Conference in Indonesia
 
-  .jumbotron__headline One Day Event&ensp;&middot;&ensp;30 Speakers&ensp;&middot;&ensp;3 Topic Areas (Technology, UI/UX, Entrepreneurship)
+  .jumbotron__headline One Day Event&ensp;&middot;&ensp;30 Speakers&ensp;&middot;&ensp;3 Topic Areas: Technology, UI/UX, Entrepreneurship
 
   .jumbotron__datetime
     | October 24, 2015
     br
     | The Hall 8th Floor, Senayan City, Jakarta
 
-  = link_to "https://play.google.com/store/apps/details?id=suitmedia.geekcamp.android", target: "_blank", style: "position: absolute; left: 50%; margin-left: -65px; bottom: 8rem;"
-    = image_tag "https://developer.android.com/images/brand/en_generic_rgb_wo_45.png", alt: "Get it on Google Play"
+  .jumbotron__apps
+    = link_to "https://play.google.com/store/apps/details?id=suitmedia.geekcamp.android", target: "_blank", class: 'jumbotron__app'
+      = image_tag "https://developer.android.com/images/brand/en_generic_rgb_wo_45.png", alt: "Get it on Google Play"
+
+  .jumbotron__bg
 
   .jumbotron__spike
-
-
 
 #schedule
   header.header Schedule
@@ -253,58 +254,59 @@
 section.section#speakers
   header.header Speakers
 
-  .speaker.w-25-l.w-33-m
-    = image_tag "speakers-2015/albert.jpg", class: 'speaker__image', alt: 'Albert'
-    .speaker__name Albert Lucius
-    .speaker__title CEO at Kudo
+  .container
+    .speaker.w-25-l.w-33-m
+      = image_tag "speakers-2015/albert.jpg", class: 'speaker__image', alt: 'Albert'
+      .speaker__name Albert Lucius
+      .speaker__title CEO at Kudo
 
-  .speaker.w-25-l.w-33-m
-    = image_tag "speakers-2015/alfred.jpg", class: 'speaker__image', alt: 'Alfred'
-    .speaker__name Alfred Boediman
-    .speaker__title VP of Samsung RnD Institute Indonesia
+    .speaker.w-25-l.w-33-m
+      = image_tag "speakers-2015/alfred.jpg", class: 'speaker__image', alt: 'Alfred'
+      .speaker__name Alfred Boediman
+      .speaker__title VP of Samsung RnD Institute Indonesia
 
-  .speaker.w-25-l.w-33-m
-    = image_tag "speakers-2015/anggri.jpg", class: 'speaker__image', alt: 'Anggri'
-    .speaker__name Anggriawan Sugianto
-    .speaker__title CTO / COO at Suitmedia Digital Agency
+    .speaker.w-25-l.w-33-m
+      = image_tag "speakers-2015/anggri.jpg", class: 'speaker__image', alt: 'Anggri'
+      .speaker__name Anggriawan Sugianto
+      .speaker__title CTO / COO at Suitmedia Digital Agency
 
-  .speaker.w-25-l.w-33-m
-    = image_tag "speakers-2015/dhiku.jpg", class: 'speaker__image', alt: 'Dhiku'
-    .speaker__name Hadikusuma Wahab
-    .speaker__title VP Product at KMKLabs
+    .speaker.w-25-l.w-33-m
+      = image_tag "speakers-2015/dhiku.jpg", class: 'speaker__image', alt: 'Dhiku'
+      .speaker__name Hadikusuma Wahab
+      .speaker__title VP Product at KMKLabs
 
-  .speaker.w-25-l.w-33-m
-    = image_tag "speakers-2015/mohan.jpg", class: 'speaker__image', alt: 'Mohan'
-    .speaker__name Mohan Krishnan
-    .speaker__title CTO at KMKLabs
+    .speaker.w-25-l.w-33-m
+      = image_tag "speakers-2015/mohan.jpg", class: 'speaker__image', alt: 'Mohan'
+      .speaker__name Mohan Krishnan
+      .speaker__title CTO at KMKLabs
 
-  .speaker.w-25-l.w-33-m
-    = image_tag "speakers-2015/naning.jpg", class: 'speaker__image', alt: 'Naning'
-    .speaker__name Naning Utoyo
-    .speaker__title UX Strategist at TradeGecko
+    .speaker.w-25-l.w-33-m
+      = image_tag "speakers-2015/naning.jpg", class: 'speaker__image', alt: 'Naning'
+      .speaker__name Naning Utoyo
+      .speaker__title UX Strategist at TradeGecko
 
-  .speaker.w-25-l.w-33-m
-    = image_tag "speakers-2015/pahlevi.jpg", class: 'speaker__image', alt: 'Pahlevi'
-    .speaker__name Pahlevi Fikri Auliya
-    .speaker__title CTO at HijUp
+    .speaker.w-25-l.w-33-m
+      = image_tag "speakers-2015/pahlevi.jpg", class: 'speaker__image', alt: 'Pahlevi'
+      .speaker__name Pahlevi Fikri Auliya
+      .speaker__title CTO at HijUp
 
-  .speaker.w-25-l.w-33-m
-    = image_tag "speakers-2015/rafeequl.jpg", class: 'speaker__image', alt: 'Rafeequl'
-    .speaker__name Rafeequl
-    .speaker__title VP Engineering at Veritrans Indonesia
+    .speaker.w-25-l.w-33-m
+      = image_tag "speakers-2015/rafeequl.jpg", class: 'speaker__image', alt: 'Rafeequl'
+      .speaker__name Rafeequl
+      .speaker__title VP Engineering at Veritrans Indonesia
 
-  .speaker.w-25-l.w-33-m
-    = image_tag "speakers-2015/shinta.jpg", class: 'speaker__image', alt: 'Shinta'
-    .speaker__name Shinta Witoyo Dhanuwardoyo
-    .speaker__title CEO &amp; Founder at Bubu
+    .speaker.w-25-l.w-33-m
+      = image_tag "speakers-2015/shinta.jpg", class: 'speaker__image', alt: 'Shinta'
+      .speaker__name Shinta Witoyo Dhanuwardoyo
+      .speaker__title CEO &amp; Founder at Bubu
 
-  .speaker.w-25-l.w-33-m
-    = image_tag "speakers-2015/tommy.jpg", class: 'speaker__image', alt: 'Tommy'
-    .speaker__name Tommy Sullivan
-    .speaker__title VP Engineering at KMKLabs
+    .speaker.w-25-l.w-33-m
+      = image_tag "speakers-2015/tommy.jpg", class: 'speaker__image', alt: 'Tommy'
+      .speaker__name Tommy Sullivan
+      .speaker__title VP Engineering at KMKLabs
 
   .grid#topics
-    .speaker-topic__container.clearfix
+    .speaker-topic__container.clearfix.container
       .speaker-topic.w-50-m.w-50-l
         = image_tag "speakers-2015/albert.jpg", class: 'speaker-topic__image', alt: 'Albert'
         .speaker-topic__identity
@@ -527,7 +529,7 @@ section.section#organizers
 
 section.section#sponsors
   header.header Sponsored by
-  .grid
+  .grid.container
     = link_to 'https://www.bukalapak.com/?utm_source=geekcamp', target: '_blank', class: 'media-partner col-2'
       = image_tag 'logo/bukalapak.png', alt: 'Bukalapak', class: 'media-partner__logo'
 
@@ -561,7 +563,7 @@ section.section#sponsors
 
 section.section#media-partners
   header.header Media Partners
-  .grid
+  .grid.container
     = link_to 'http://www.liputan6.com/?utm_source=geekcamp', target: '_blank', class: 'media-partner col-2'
       = image_tag 'logo/liputan6.png', class: 'media-partner__logo', alt: 'Liputan6'
 
@@ -579,7 +581,7 @@ section.section#media-partners
 
 section.section#communities
   header.header Communities
-  .grid
+  .grid.container
     = link_to 'http://ruby.id/?utm_source=geekcamp', target: '_blank', class: 'community col-2'
       = image_tag 'logo/id-ruby--small.png', class: 'community__logo', alt: 'id-ruby'
 

@@ -1,10 +1,20 @@
 .jumbotron {
   text-align: center;
   position: relative;
-  padding-top: 10rem;
-  padding-bottom: 10rem;
-  background-image: image-url('background.jpg');
+  padding: 10rem 0; 
+}
+
+.jumbotron__bg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-image: image-url('better-background--small.jpg');
   background-size: cover;
+  background-position: center;
+  opacity: 0.25;
+  z-index: -1;
 }
 
 
@@ -16,22 +26,26 @@
   max-width: 95%;
 }
 
-.jumbotron__logo_caption {
-  color: $red;
-  font-weight: bold;
-  margin-top: 1rem;
+.jumbotron__headline {
+  margin-bottom: 4rem;
+  padding: 0 2rem;
   font-size: 2rem;
+  font-weight: bold;
 }
 
-.jumbotron__headline {
-  margin-top: 4rem;
-  font-size: 2rem;
-  font-weight: bold;
+.jumbotron__headline.m--red {
+  color: $red_dark;
 }
 
 .jumbotron__datetime {
   margin-top: 4rem;
   font-size: 2.25rem;
+  padding: 0 2rem;
+}
+
+.jumbotron__apps {
+  margin-top: 2rem;
+  text-align: center;
 }
 
 .jumbotron__spike {

@@ -12,6 +12,7 @@
  */
 
 $red:       #EC2B46;
+$red_dark:  darken($red, 15%);
 $grey:      #D5E2E2;
 $grey_dark: #363636;
 $white:     #FFFFFF;
@@ -96,7 +97,7 @@ a {
 }
 
 .button {
-  border: 1px solid darken($red, 15%);
+  border: 1px solid $red_dark;
   border-radius: 5px;
   padding: 1rem 2rem;
   margin: 1rem 0;
@@ -107,8 +108,8 @@ a {
   display: inline-block;
 
   &:hover {
-    border-color: darken($red, 25%);
-    background: darken($red, 15%);
+    border-color: darken($red_dark, 15%);
+    background: $red_dark;
     color: white;
   }
 }
@@ -128,6 +129,7 @@ a {
 
 .header {
   font-size: 2.8rem;
+  font-weight: bold;
   color: $red;
   text-transform: uppercase;
   padding-bottom: 1.75rem;
@@ -136,39 +138,30 @@ a {
   margin: 2.5rem auto;
   text-align: center;
 }
+
 .header.m--full {
   max-width: inherit;
 }
 
-.grid {
-  margin-bottom: 50px;
-}
-
-.blank {
+.call-to-sponsor {
   text-align: center;
   font-size: 2.2rem;
-  padding: 2.5rem 0;
-}
-
-#organizers,
-#sponsors,
-#media-partners,
-#community {
-  text-align: center;
+  padding: 0 0 2.5rem;
 }
 
 #sponsors {
-  text-align: center;
   font-size: 1.2rem;
   position: relative;
 }
 
-#speakers {
-  text-align: center;
-}
-
 .media-partner {
   margin-bottom: 50px;
+}
+
+.grid {
+  max-width: 92rem;
+  margin: 0 auto 4rem;
+  text-align: center;
 }
 
 .col-2 {

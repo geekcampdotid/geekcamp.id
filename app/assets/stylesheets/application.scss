@@ -22,30 +22,22 @@ $white:     #FFFFFF;
   transition: $property $time $effect $delay;
 }
 
-@import "cfp";
-@import "jumbotron";
 @import "about";
+@import "cfp";
+@import "footer";
+@import "jumbotron";
 @import "navigation";
 @import "participate";
 @import "schedule";
-@import "sponsor";
 @import "speakers";
-@import "footer";
+@import "sponsor";
+@import "topics";
 
 * {
   margin: 0;
   padding: 0;
   border: none;
   box-sizing: border-box;
-}
-
-.clearfix:before, .clearfix:after {
-    content: " ";
-    display: table;
-}
-
-.clearfix:after {
-    clear: both;
 }
 
 html {

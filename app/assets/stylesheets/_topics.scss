@@ -1,0 +1,108 @@
+#topics {
+  background-color: #F8F8F8;
+}
+
+.topic {
+  margin-bottom: 30px;
+  text-align: left;
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  margin: 2rem 0;
+}
+
+.topic__container {
+  margin-right: auto;
+  margin-left: auto;
+  padding: 18px 25px;
+
+  column-count: 2;
+  column-gap: 4rem;
+  column-fill: balance;
+}
+
+.topic__image {
+  border: 3px solid #D5E2E2;
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: inline-block;
+  margin-right: 15px;
+  margin-top: -8px;
+  vertical-align: -webkit-baseline-middle;
+}
+
+.topic__image.m--blank {
+  padding: 6px;
+  width: 60px;
+  height: 60px;
+  opacity: 0.5;
+  vertical-align: -webkit-baseline-middle;
+}
+
+
+.topic__name {
+  font-size: 1.35rem;
+  margin-bottom: 2px;
+  color: #EC2B46;
+  letter-spacing: 0.2rem;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+.topic__identity {
+  width: calc(100% - 80px);
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.topic__role {
+  font-size: 1.3rem;
+  color: #8d93a0;
+}
+
+.topic__title {
+  font-size: 1.3rem;
+  padding-top: 8px;
+  font-weight: bold;
+  color: #333;
+  text-decoration: none;
+  display: block;
+
+  &[href] {
+    color: #1D62AE;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+// .topic__topic--to-be-confirmed {
+//   font-weight: normal;
+//   font-style: oblique;
+// }
+
+@media screen and (min-width: 30em) and (max-width: 67em) {
+
+  .topic {
+    &__name {
+      font-size: 1.4rem;
+    }
+
+    &:first-child {
+      margin-top: 2rem;
+    }
+  }
+
+}
+
+@media screen and (min-width: 67em) {
+
+  .topic {
+    &:first-child {
+      margin-top: 2rem;
+    }
+  }
+
+}

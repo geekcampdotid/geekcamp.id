@@ -13,14 +13,11 @@ section.section#schedule
     tbody
       tr
         td.schedule__time 08:00 - 09:00
-        td.schedule__slot.m--empty colspan="3" Registration
+        td.schedule__slot.m--event colspan="3" Registration
 
       tr
         td.schedule__time 09:00 - 09:10
-
-        td.schedule__slot
-          .schedule__topic Opening Address
-
+        td.schedule__slot.m--event Opening Address
         td.schedule__slot.m--empty colspan=2 rowspan=2 Closed
 
       tr
@@ -39,7 +36,7 @@ section.section#schedule
           .schedule__topic The Future of Front-End Engineering
           .schedule__name Simon Stürmer
 
-        td.schedule__time 09:45 - 09:57
+        td.schedule__time 09:45 - 09:55
 
         td.schedule__slot
           = image_tag "smile.png", class: "schedule__image", alt: "Smile"
@@ -47,7 +44,7 @@ section.section#schedule
           .schedule__name Afif Akbar Iskandar
 
       tr
-        td.schedule__time 09:57 - 10:10
+        td.schedule__time 10:00 - 10:10
 
         td.schedule__slot
           = image_tag "smile.png", class: "schedule__image", alt: "Smile"
@@ -60,7 +57,7 @@ section.section#schedule
           = image_tag "speakers/hadikusuma-wahab.jpg", class: "schedule__image", alt: "Diku"
           .schedule__name.m--no-topic Hadikusuma Wahab
 
-        td.schedule__time 10:15 - 10:27
+        td.schedule__time 10:15 - 10:25
 
         td.schedule__slot
           = image_tag "speakers/ifnu-bima-fatkhan.jpg", class: "schedule__image", alt: "Ifnu"
@@ -68,7 +65,7 @@ section.section#schedule
           .schedule__name Ifnu Bima Fatkhan
 
       tr
-        td.schedule__time 10:27 - 10:40
+        td.schedule__time 10:30 - 10:40
 
         td.schedule__slot
           = image_tag "speakers/riza-fahmi.jpg", class: "schedule__image", alt: "Riza"
@@ -84,7 +81,7 @@ section.section#schedule
           .schedule__topic Building a Programming Language 101
           .schedule__name Giovanni Sakti
 
-        td.schedule__time 10:45 - 10:57
+        td.schedule__time 10:45 - 10:55
 
         td.schedule__slot
           /= image_tag "speakers/vina-melody.jpg", class: "schedule__image", alt: "Vina"
@@ -93,7 +90,7 @@ section.section#schedule
           .schedule__name Vina Melody
 
       tr
-        td.schedule__time 10:57 - 11:10
+        td.schedule__time.m--no-border 11:00 - 11:10
 
         td.schedule__slot
           = image_tag "speakers/estu-fardani.jpg", class: "schedule__image", alt: "Estu"
@@ -102,10 +99,10 @@ section.section#schedule
 
       tr
         td.schedule__time 11:15 - 12:15
-        td.schedule__slot.m--empty colspan=3 Lunch & HacKarir
+        td.schedule__slot.m--event colspan=3 Lunch & HacKarir
 
       tr
-        td.schedule__time rowspan=2 12:20 - 12:45
+        td.schedule__time rowspan=2 12:15 - 12:40
 
         td.schedule__slot rowspan=2
           /= image_tag "speakers/herdy-handoko.jpg", class: "schedule__image", alt: "Herdy"
@@ -113,14 +110,14 @@ section.section#schedule
           .schedule__topic Streaming Applications with Akka Streams
           .schedule__name Herdy Handoko
 
-        td.schedule__time 12:20 - 12:32
+        td.schedule__time 12:15 - 12:25
 
         td.schedule__slot
           = image_tag "speakers/sheran-gunasekera.jpg", class: "schedule__image", alt: "Sheran"
           .schedule__name.m--no-topic Sheran Gunasekera
 
       tr
-        td.schedule__time 12:32 - 12:45
+        td.schedule__time 12:30 - 12:40
 
         td.schedule__slot
           = image_tag "speakers/taufiq-muhammadi.jpg", class: "schedule__image", alt: "Taufiq"
@@ -128,14 +125,14 @@ section.section#schedule
           .schedule__name Taufiq Muhammadi
 
       tr
-        td.schedule__time rowspan=2 12:50 - 13:15
+        td.schedule__time rowspan=2 12:45 - 13:10
 
         td.schedule__slot rowspan=2
           = image_tag "speakers/willix-halim.jpg", class: "schedule__image", alt: "Willix"
           .schedule__topic Why Geeks Make Awesome Growth Marketers?
           .schedule__name Willix Halim
 
-        td.schedule__time 12:50 - 13:02
+        td.schedule__time 12:45 - 12:55
 
         td.schedule__slot
           = image_tag "speakers/didik-wicaksono.jpg", class: "schedule__image", alt: "Didik"
@@ -143,7 +140,7 @@ section.section#schedule
           .schedule__name Didik Wicaksono
 
       tr
-        td.schedule__time 13:02 - 13:15
+        td.schedule__time 13:00 - 13:10
 
         td.schedule__slot
           /= image_tag "speakers/mochamad-fathoni.jpg", class: "schedule__image", alt: "Mochamad"
@@ -152,20 +149,20 @@ section.section#schedule
           .schedule__name Mochamad Fathoni
 
       tr
-        td.schedule__time rowspan=2 13:20 - 13:45
+        td.schedule__time rowspan=2 13:15 - 13:40
 
         td.schedule__slot rowspan=2
           = image_tag "speakers/mike-mazur.jpg", class: "schedule__image", alt: "Mike"
           .schedule__name.m--no-topic Mike Mazur
 
-        td.schedule__time 13:20 - 13:32
+        td.schedule__time 13:15 - 13:25
 
         td.schedule__slot
           = image_tag "smile.png", class: "schedule__image", alt: "Smile"
           .schedule__topic.m--tbd To Be Determined
 
       tr
-        td.schedule__time 13:32 - 13:45
+        td.schedule__time 13:30 - 13:40
 
         td.schedule__slot
           /= image_tag "speakers/ady-rahmat-ma.jpg", class: "schedule__image", alt: "Ady"
@@ -174,14 +171,14 @@ section.section#schedule
           .schedule__name Ady Rahmat MA
 
       tr
-        td.schedule__time rowspan=2 13:50 - 14:15
+        td.schedule__time rowspan=2 13:45 - 14:10
 
         td.schedule__slot rowspan=2
           = image_tag "speakers/michael-ong.jpg", class: "schedule__image", alt: "Michael"
           .schedule__topic Agile Product Management
           .schedule__name Michael Ong
     
-        td.schedule__time 13:50 - 14:02
+        td.schedule__time 13:45 - 13:55
 
         td.schedule__slot
           = image_tag "smile.png", class: "schedule__image", alt: "Smile"
@@ -189,7 +186,7 @@ section.section#schedule
           .schedule__name Agung Setiawan
 
       tr
-        td.schedule__time 14:02 - 14:15
+        td.schedule__time.m--no-border 14:00 - 14:10
 
         td.schedule__slot
           /= image_tag "speakers/muhammad-mufid-afif.jpg", class: "schedule__image", alt: "Mufid"
@@ -198,18 +195,18 @@ section.section#schedule
           .schedule__name Muhammad Mufid Afif
 
       tr
-        td.schedule__time 14:20 - 15:20
-        td.schedule__slot.m--empty colspan=3 Snack & HacKarir
+        td.schedule__time 14:15 - 15:15
+        td.schedule__slot.m--event colspan=3 Snack & HacKarir
 
       tr
-        td.schedule__time rowspan=2 15:25 - 15:37
+        td.schedule__time rowspan=2 15:15 - 15:40
 
         td.schedule__slot rowspan=2
           = image_tag "speakers/mohan-krishnan.jpg", class: "schedule__image", alt: "Mohan"
           .schedule__topic Real World DevOps - What works and what sure as hell doesn't.
           .schedule__name Mohan Krishnan
 
-        td.schedule__time 15:25 - 15:37
+        td.schedule__time 15:15 - 15:25
 
         td.schedule__slot
           /= image_tag "speakers/sudheer.jpg", class: "schedule__image", alt: "Sudheer"
@@ -218,7 +215,7 @@ section.section#schedule
           .schedule__name Sudheer
 
       tr
-        td.schedule__time 15:37 - 15:50
+        td.schedule__time 15:30 - 15:40
 
         td.schedule__slot
           /= image_tag "speakers/hengki-sihombing.jpg", class: "schedule__image", alt: "Hengki"
@@ -228,13 +225,13 @@ section.section#schedule
 
 
       tr
-        td.schedule__time rowspan=2 15:55 - 16:20
+        td.schedule__time rowspan=2 15:45 - 16:10
 
         td.schedule__slot rowspan=2
           = image_tag "smile.png", class: "schedule__image", alt: "Smile"
           .schedule__topic.m--tbd To Be Determined
 
-        td.schedule__time 15:55 - 16:07
+        td.schedule__time 15:45 - 15:55
         
         td.schedule__slot
           /= image_tag "speakers/sigit-prayoga.jpg", class: "schedule__image", alt: "Sigit"
@@ -243,7 +240,7 @@ section.section#schedule
           .schedule__name Sigit Prayoga
 
       tr
-        td.schedule__time 16:07 - 16:20
+        td.schedule__time 16:00 - 16:10
 
         td.schedule__slot
           = image_tag "smile.png", class: "schedule__image", alt: "Smile"
@@ -252,14 +249,14 @@ section.section#schedule
           .schedule__name Andreas Hadimulyono &amp; Aneesh Chandra PN
 
       tr
-        td.schedule__time rowspan=2 16:25 - 16:50
+        td.schedule__time rowspan=2 16:15 - 16:40
 
         td.schedule__slot rowspan=2
           = image_tag "speakers/achmad-gozali.jpg", class: "schedule__image", alt: "Gozali"
           .schedule__topic How We Automated Code Review Process
           .schedule__name Achmad Gozali
 
-        td.schedule__time 16:25 - 16:37
+        td.schedule__time 16:15 - 16:25
 
         td.schedule__slot
           = image_tag "speakers/irvan-fahlepi.jpg", class: "schedule__image", alt: "Irvan"
@@ -267,7 +264,7 @@ section.section#schedule
           .schedule__name Irvan Fahlepi
 
       tr
-        td.schedule__time 16:37 - 16:50
+        td.schedule__time.m--no-border 16:30 - 16:40
 
         td.schedule__slot
           /= image_tag "speakers/adrianus-yoza-aprilio.jpg", class: "schedule__image", alt: "Yoza"
@@ -276,7 +273,7 @@ section.section#schedule
           .schedule__name Adrianus Yoza Aprilio
 
       tr
-        td.schedule__time 16:55 - 17:25
+        td.schedule__time 16:45 - 17:15
 
         td.schedule__slot
           = image_tag "speakers/tim-sell.jpg", class: "schedule__image", alt: "Tim"
@@ -286,10 +283,9 @@ section.section#schedule
         td.schedule__slot.m--empty colspan=2 rowspan=2 Closed
 
       tr
-        td.schedule__time 17:30 - 17:35
+        td.schedule__time.m--no-border 17:20 - 17:25
 
-        td.schedule__slot
-          .schedule__topic Closing Address
+        td.schedule__slot.m--event Closing Address
 
 
 

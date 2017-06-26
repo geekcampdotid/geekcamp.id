@@ -11,14 +11,24 @@
 }
 
 .schedule__time {
-  border-top: 1px dashed $red;
+  border-bottom: 1px dashed $red;
   text-align: center;
-  width: 100px;
+  width: 10rem;
+}
+
+.schedule__time.m--no-border {
+  border: 0;
 }
 
 .schedule__slot {
   padding: 5px 0 5px 15px;
-  width: 45%;
+  width: 35%;
+}
+
+.schedule__slot.m--event {
+  font-weight: bold;
+  background-color: $grey_light;
+  text-align: center;
 }
 
 .schedule__slot.m--empty {
@@ -41,8 +51,9 @@
 }
 
 .schedule__topic.m--tbd {
+  color: $grey;
   font-weight: normal;
-  line-height: 3rem;
+  line-height: 4rem;
 }
 
 .schedule__image {
@@ -61,6 +72,6 @@
 
 .schedule__name.m--no-topic {
   font-weight: bold;
-  line-height: 3rem;
+  line-height: 4rem;
 }
 

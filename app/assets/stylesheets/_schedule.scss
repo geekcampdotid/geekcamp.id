@@ -1,19 +1,18 @@
 .schedule {
-  color: #333;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
-  line-height: 30px;
-  width: 100%; } 
+  color: $grey_dark;
+  font-size: 1.2rem;
+  width: 100%;
+}
+
 .schedule__header {
-  color: #333;
+  color: $grey_dark;
   font-size: 20px;
   font-weight: 600;
 }
 
 .schedule__time {
-  border-top: 1px dashed red;
-  color: #999;
-  padding-left: 10px;
+  border-top: 1px dashed $red;
+  text-align: center;
   width: 100px;
 }
 
@@ -22,10 +21,9 @@
   width: 45%;
 }
 
-.schedule__slot--span {
-  background-color: #eee;
+.schedule__slot.m--empty {
+  background-color: $grey_light;
   text-align: center;
-  font-weight: 600;
 }
 
 .schedule__topic {
@@ -42,27 +40,27 @@
   }
 }
 
-.schedule__speaker {
-  display: inline-block;
-  margin-right: 15px;
-}
-
-.schedule__topic--to-be-confirmed {
+.schedule__topic.m--tbd {
   font-weight: normal;
-  font-style: oblique;
+  line-height: 3rem;
 }
 
 .schedule__image {
   border: 3px solid #D5E2E2;
   border-radius: 50%;
-  display: inline;
-  height: 35px;
+  float: left;
+  height: 4rem;
   margin-right: 10px;
   vertical-align: middle;
-  width: 35px;
 }
 
 .schedule__name {
   display: inline;
   vertical-align: middle;
 }
+
+.schedule__name.m--no-topic {
+  font-weight: bold;
+  line-height: 3rem;
+}
+

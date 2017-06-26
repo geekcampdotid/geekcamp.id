@@ -11,11 +11,14 @@
  * file per style scope.
  */
 
-$red:       #EC2B46;
-$red_dark:  darken($red, 15%);
-$grey:      #D5E2E2;
-$grey_dark: #363636;
-$white:     #FFFFFF;
+$red:         #EC2B46;
+$red_dark:    darken($red, 15%);
+
+$grey:        #D5E2E2;
+$grey_light:  lighten($grey, 5%);
+$grey_dark:   #363636;
+
+$white:       #FFFFFF;
 
 @mixin transition($property, $time, $effect, $delay){
   -webkit-transition: $property $time $effect $delay;

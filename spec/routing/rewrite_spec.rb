@@ -37,7 +37,7 @@ describe "rack-rewrite" do
     }.merge(options)
   end
 
-  let(:scheme)  { 'http' }
+  let(:scheme)  { 'https' }
   let(:host)    { 'www.geekcamp.id' }
   let(:port)    { nil }
 
@@ -56,6 +56,22 @@ describe "rack-rewrite" do
     expect(get('/buy')).to                 eq('https://www.bukalapak.com/p/tiket-voucher/tiket-voucher-lainnya/83qwu2-jual-tiket-geekcamp-15-juli-2017')
     expect(get('/pay')).to                 eq('https://www.bukalapak.com/p/tiket-voucher/tiket-voucher-lainnya/83qwu2-jual-tiket-geekcamp-15-juli-2017')
     expect(get('/pay?utm_source=bbm')).to  eq('https://www.bukalapak.com/p/tiket-voucher/tiket-voucher-lainnya/83qwu2-jual-tiket-geekcamp-15-juli-2017?utm_source=bbm')
+  end
+
+  context "when http" do
+    let(:scheme) { 'http' }
+
+    it "redirects to https" do
+      expect(get('/')).to                eq('https://www.geekcamp.id/')
+    end
+  end
+
+  context "when the naked domain" do
+    let(:host) { 'geekcamp.id' }
+
+    it "redirects to www" do
+      expect(get('/')).to                eq('https://www.geekcamp.id/')
+    end
   end
 
 end

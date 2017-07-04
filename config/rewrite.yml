@@ -1,17 +1,17 @@
-# -
-#   method: r301
-#   from: !ruby/regexp '/(.*)/'
-#   to:   'https://www.geekcamp.id$1'
-#   options:
-#     host:   'geekcamp.id'
-#
-# -
-#   method: r301
-#   from: !ruby/regexp '/(.*)/'
-#   to:   'https://www.geekcamp.id$1'
-#   options:
-#     host:   'www.geekcamp.id'
-#     scheme: 'http'
+-
+  method: r301
+  from: !ruby/regexp '/(.*)/'
+  to:   'https://www.geekcamp.id$1'
+  options:
+    host:   'geekcamp.id'
+
+-
+  method: r301
+  from: !ruby/regexp '/(.*)/'
+  to:   'https://www.geekcamp.id$1'
+  options:
+    host:   'www.geekcamp.id'
+    scheme: 'http'
 
 -
   method: r301
@@ -21,9 +21,7 @@
     host:   'geekcamp.dev'
     port:   3000
 
-
 # ----------- That's the hosts, now just redirects on geekcamp.id --------------
-
 
 -
   method: r301

@@ -31,6 +31,7 @@ $white:       #FFFFFF;
 @import "jumbotron";
 @import "navigation";
 @import "participate";
+@import "partners";
 @import "schedule";
 @import "speakers";
 @import "sponsor";
@@ -138,48 +139,9 @@ a {
   max-width: inherit;
 }
 
-.call-to-sponsor {
-  text-align: center;
-  font-size: 2.2rem;
-  padding: 0 0 2.5rem;
-}
-
-#sponsors {
-  font-size: 1.2rem;
-  position: relative;
-}
-
-.media-partner {
-  margin-bottom: 50px;
-}
-
-.grid {
-  max-width: 92rem;
-  margin: 0 auto 4rem;
-  text-align: center;
-}
-
-.col-2 {
-  width: 49%;
-  font-size: 0;
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.sponsor__logo,
-.community__logo,
-.media-partner__logo  {
-  vertical-align: middle;
-  max-width: 75%;
-  padding: 1rem;
-}
-
 .section {
-  margin: 0 auto 80px;
+  margin: 0 auto 10rem;
   padding: 0 1rem;
 }
 
-.community {
-  text-align: center;
-  margin-bottom: 5rem;
-}
+

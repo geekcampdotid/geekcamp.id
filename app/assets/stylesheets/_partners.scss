@@ -1,0 +1,47 @@
+
+.partners {
+  max-width: 92rem;
+  margin: 0 auto 10rem;
+  text-align: center;
+}
+
+// .partners {
+//   margin-bottom: 5rem;
+// }
+
+.partner {
+  width: 49.5%;
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.partner.m--main {
+  width: 90%;
+}
+
+.partner__logo  {
+  vertical-align: middle;
+  width: 80%;
+  max-width: 300px;
+  padding: 1rem;
+}
+
+.partner__logo.m--with-background {
+  width: auto;
+  max-width: 90%;
+  max-height: 150px;
+}
+
+.partner__logo.m--narrow {
+  width: 100%;
+  max-width: 500px;
+}
+
+
+.call-to-sponsor {
+  text-align: center;
+  font-size: 2.2rem;
+  padding: 0 0 2.5rem;
+}
+

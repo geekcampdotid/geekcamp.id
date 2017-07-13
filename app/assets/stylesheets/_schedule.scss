@@ -14,6 +14,9 @@
   border-bottom: 1px dashed $red;
   text-align: center;
   width: 10rem;
+  &--double {
+    height: 10rem;
+  }
 }
 
 .schedule__time.m--no-border {

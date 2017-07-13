@@ -92,7 +92,7 @@ section.section#schedule
 
         td.schedule__slot
           = image_tag "smile.png", class: "schedule__image", alt: "Smile"
-          .schedule__topic.m--tbd To Be Determined
+          .schedule__name.m--no-topic Tito Pandu Brahmanto
 
       tr
         td.schedule__time 11:15 - 12:15
@@ -141,9 +141,11 @@ section.section#schedule
 
         td.schedule__slot
           /= image_tag "speakers/mochamad-fathoni.jpg", class: "schedule__image", alt: "Mochamad"
+          /= image_tag "smile.png", class: "schedule__image", alt: "Smile"
+          /.schedule__topic IoT and Unemployment: The effect of internet illiteracy. Case Studi in Bumiayu, Brebes, Central Java
+          /.schedule__name Mochamad Fathoni
           = image_tag "smile.png", class: "schedule__image", alt: "Smile"
-          .schedule__topic IoT and Unemployment: The effect of internet illiteracy. Case Studi in Bumiayu, Brebes, Central Java
-          .schedule__name Mochamad Fathoni
+          .schedule__topic.m--tbd To Be Determined
 
       tr
         td.schedule__time rowspan=2 13:15 - 13:40

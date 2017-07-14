@@ -5,13 +5,11 @@
       = image_tag 'geekcamp--small.png', alt: 'GeekCamp'
       = link_to "Get Tickets", ticket_path, class: 'navigation__link button navigation__mobile'
 
-
   ul.navigation__links
-    li= link_to "Speakers",       home_path(anchor: 'speakers'),  class: 'navigation__link'
-    li= link_to "Schedule",      home_path(anchor: 'schedule'),  class: 'navigation__link'
-    /li= link_to "CFP",            new_cfp_path,                   class: 'navigation__link'
-    li= link_to "Sponsor",        sponsor_path,                   class: 'navigation__link'
-    /li= link_to "Need Help?",    home_path(anchor: 'need-help'), class: 'navigation__link'
-    li= link_to "GeekCamp 2015",  home_2015_path,                 class: 'navigation__link'
-    li= link_to "Get Tickets",    ticket_path,                    class: 'navigation__link button navigation__desktop'
+    /li= link_to "CFP",             new_cfp_path,                   class: 'navigation__link'
+    /li= link_to "Speakers",        home_path(anchor: 'speakers'),  class: 'navigation__link'
+    li= link_to "Schedule",         home_path(anchor: 'schedule'),  class: 'navigation__link'
+    li= link_to "Location",         home_path(anchor: 'location'),  class: 'navigation__link'
+    li= link_to "Sponsors",         home_path(anchor: 'sponsors'),  class: 'navigation__link'
+    /li= link_to "Get Tickets",     ticket_path,                    class: 'navigation__link button navigation__desktop'
 

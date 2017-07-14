@@ -18,4 +18,10 @@ class PagesController < ApplicationController
   def sponsor
   end
 
+  def code_of_conduct
+  end
+
+  def kode_etik
+  end
+
 end

@@ -27,6 +27,7 @@ $white:       #FFFFFF;
 
 @import "about";
 @import "cfp";
+@import "code_of_conduct";
 @import "footer";
 @import "jumbotron";
 @import "navigation";
@@ -92,6 +93,14 @@ a {
   }
 }
 
+p {
+  margin-bottom: 1rem;
+}
+
+p.m--small {
+  font-size: 1rem;
+}
+
 .button {
   border: 1px solid $red_dark;
   border-radius: 5px;
@@ -133,6 +142,10 @@ a {
   max-width: 50%;
   margin: 2.5rem auto;
   text-align: center;
+}
+
+.header.m--small {
+  font-size: 2.2rem;
 }
 
 .header.m--full {

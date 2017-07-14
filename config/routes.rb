@@ -9,4 +9,7 @@ Rails.application.routes.draw do
 
   get '/sponsor'  => 'pages#sponsor',   as: :sponsor
 
+  get '/code-of-conduct'  => 'pages#code_of_conduct', as: :code_of_conduct
+  get '/kode-etik'        => 'pages#kode_etik',       as: :kode_etik
+
 end

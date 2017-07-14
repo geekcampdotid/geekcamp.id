@@ -1,0 +1,17 @@
+.code-of-conduct {
+  max-width: 72rem;
+  margin: 0 auto 7.5rem;
+  padding: 0 2rem;
+
+  &:first-of-type {
+    margin-top: 5rem;
+  }
+
+  p {
+    text-indent: 2rem;
+  }
+
+  p.m--small {
+    text-indent: 0;
+  }
+}

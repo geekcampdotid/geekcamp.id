@@ -43,15 +43,15 @@
   line-height: 2rem;
   margin-bottom: 30px;
   letter-spacing: 1px;
-  font-size: 1.4rem;
+  font-size: 1.6rem;
+}
+
+.apps__logo a:not(:first-child) {
+  margin-left: 20px;
 }
 
 .apps__logo-ios {
   width: 40%;
-
-  &:not(:first-child) {
-    margin-left: 20px;
-  }
 }
 
 .apps__container-right {
@@ -91,6 +91,10 @@
     padding: 2rem 3rem 0 0;
   }
 
+  .apps__subtext {
+    font-size: 1.4rem;
+  }
+
   .apps__container-left__wrapper {
     top: 45%;
   }
@@ -102,9 +106,6 @@
   .apps__logo-ios {
     width: 30%;
 
-    &:not(:first-child) {
-      margin-left: 20px;
-    }
   }
 
   .apps__phone-content {

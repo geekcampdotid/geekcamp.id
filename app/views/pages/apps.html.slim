@@ -12,8 +12,10 @@ section.apps
           .apps__text Let's discover Geekcamp Indonesia Apps
           .apps__subtext Full conference agenda including presenters, schedule, map, exhibitors and more. Bookmark the talks that interest you most and view your personal schedule.
           .apps__logo
-            = image_tag "ios-flat.png", class: "apps__logo-ios"
-            = image_tag "ios-flat.png", class: "apps__logo-ios"
+            a href="https://itunes.apple.com/app/id1256595392"
+              = image_tag "ios-flat.png", class: "apps__logo-ios"
+            a href="https://play.google.com/store/apps/details?id=com.geekcamp.kodefox"
+              = image_tag "google-flat.png", class: "apps__logo-ios"
       .apps__container-right
         .apps__phone-container
           = image_tag "apps-home.png", class:"apps__phone-content"

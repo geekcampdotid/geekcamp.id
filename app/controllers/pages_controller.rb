@@ -24,4 +24,10 @@ class PagesController < ApplicationController
   def kode_etik
   end
 
+  def app
+  end
+
+  def get_there
+  end
+
 end

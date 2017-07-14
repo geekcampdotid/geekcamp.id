@@ -1,6 +1,6 @@
 .apps {
   padding-top: 1rem;
-  background: #EC2B46 url(/assets/base-header.png) repeat top center;
+  background: #EC2B46 asset-url("base-header.png") repeat top center;
   background-size: contain;
   height: calc(100vh - 95px);
 }
@@ -61,7 +61,7 @@
 }
 
 .apps__phone-container {
-  background: url(/assets/iphone.png) no-repeat;
+  background: asset-url("iphone.png") no-repeat;
   background-position: 50%;
   background-size: contain;
   text-align: center;

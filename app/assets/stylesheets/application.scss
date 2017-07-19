@@ -26,9 +26,12 @@ $white:       #FFFFFF;
 }
 
 @import "about";
+@import "apps";
 @import "cfp";
 @import "code_of_conduct";
+@import "faces";
 @import "footer";
+@import "get_there";
 @import "jumbotron";
 @import "navigation";
 @import "participate";
@@ -37,8 +40,6 @@ $white:       #FFFFFF;
 @import "speakers";
 @import "sponsor";
 @import "topics";
-@import "apps";
-@import "get_there";
 
 * {
   margin: 0;

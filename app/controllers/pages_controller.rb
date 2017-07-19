@@ -30,4 +30,7 @@ class PagesController < ApplicationController
   def get_there
   end
 
+  def faces
+  end
+
 end

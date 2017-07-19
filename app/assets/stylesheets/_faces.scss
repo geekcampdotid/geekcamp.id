@@ -1,0 +1,38 @@
+
+.faces {
+  text-align: center;
+  margin: 0 auto;
+
+  max-width: 1080px;
+  column-count: 7;
+  column-gap: 2rem;
+  column-fill: balance;
+}
+
+.faces__item {
+  display: inline-block;
+
+  width: 10rem;
+  height: 10rem;
+
+  margin-bottom: 5rem;
+}
+
+.faces__image {
+  position: relative;
+  border: 5px solid rgba(213, 226, 226, 0.35);
+  border-radius: 50%;
+  height: 10rem;
+  width: 10rem;
+  margin: 0 auto;
+}
+
+.faces__name {
+  font-size: 1.25rem;
+  color: #EC2B46;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 0.6rem;
+  line-height: 1.7rem;
+  white-space: nowrap;
+}

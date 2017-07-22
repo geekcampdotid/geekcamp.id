@@ -2,6 +2,9 @@ section.section#schedule
 
   header.header Schedule
 
+  - bucket = "https://cdn-a.kmk-engineering.static6.com/geekcamp-2017/talks"
+  - bucket = "http://www.geekcamp.dev:3000/2017/talks" if Rails.env.development?
+
   table.schedule
     thead
       tr
@@ -17,7 +20,9 @@ section.section#schedule
 
       tr
         td.schedule__time 09:30 - 09:40
-        td.schedule__slot.m--event Opening Address
+        td.schedule__slot.m--event
+          = link_to "#{bucket}/Opening-and-Closing-Address_Tommy-Sullivan.pdf", class: "" do
+            | Opening Address
         td.schedule__slot.m--empty colspan=2 rowspan=2 Closed
 
       tr
@@ -25,7 +30,8 @@ section.section#schedule
 
         td.schedule__slot
           = image_tag "speakers/ditesh-gathani--small.jpg", class: "schedule__image", alt: "Ditesh"
-          .schedule__topic Scaling Lessons from Grab - Building the Next Unicorn in Indonesia
+          = link_to "#{bucket}/Scaling-Lessons-from-Grab-Building-the-Next-Unicorn-in-Indonesia_Ditesh-Gathani.pdf", class: "schedule__topic" do
+            | Scaling Lessons from Grab - Building the Next Unicorn in Indonesia
           .schedule__name Ditesh Gathani
 
       tr
@@ -33,7 +39,8 @@ section.section#schedule
 
         td.schedule__slot rowspan=2
           = image_tag "speakers/simon-sturmer.jpg", class: "schedule__image", alt: "Simon"
-          .schedule__topic The Future of Front-End Engineering
+          = link_to "#{bucket}/The-Future-of-Front-End-Engineering_Simon-Stürmer.pdf", class: "schedule__topic" do
+            | The Future of Front-End Engineering
           .schedule__name Simon Stürmer
 
         td.schedule__time 10:20 - 10:30
@@ -56,7 +63,9 @@ section.section#schedule
 
         td.schedule__slot rowspan=2
           = image_tag "speakers/hadikusuma-wahab.jpg", class: "schedule__image", alt: "Diku"
-          .schedule__name.m--no-topic Hadikusuma Wahab
+          = link_to "#{bucket}/Mastering-Effective-Communication_Hadikusuma-Wahab.pdf", class: "schedule__topic" do
+            | Mastering Effective Communication
+          .schedule__name Hadikusuma Wahab
 
         td.schedule__time 10:50 - 11:00
 
@@ -78,14 +87,16 @@ section.section#schedule
 
         td.schedule__slot rowspan=2
           = image_tag "speakers/giovanni-sakti--small.jpg", class: "schedule__image", alt: "Giovanni"
-          .schedule__topic Building a Programming Language 101
+          = link_to "#{bucket}/Building-a-Programming-Language-101_Giovanni-Sakti.pdf", class: "schedule__topic" do
+            | Building a Programming Language 101
           .schedule__name Giovanni Sakti
 
         td.schedule__time 11:20 - 11:30
 
         td.schedule__slot
           = image_tag "speakers/vina-melody--small.jpg", class: "schedule__image", alt: "Vina"
-          .schedule__topic Practical use of Swift's Higher Order Function
+          = link_to "#{bucket}/Swift-Higher-Order-Functions_Vina-Melody.pdf", class: "schedule__topic" do
+            | Practical use of Swift's Higher Order Function
           .schedule__name Vina Melody
 
       tr
@@ -112,7 +123,8 @@ section.section#schedule
 
         td.schedule__slot
           = image_tag "speakers/jaka-wiradisuria--small.jpg", class: "schedule__image", alt: "Jaka"
-          .schedule__topic UX Design Process For The Non-tech Savvy Users
+          = link_to "#{bucket}/The-Role-of-Empathy-in-UX-Design-Process_Jaka-Wiradisuria.pdf", class: "schedule__topic" do
+            | UX Design Process For The Non-tech Savvy Users
           .schedule__name Jaka Wiradisuria
 
       tr
@@ -120,7 +132,8 @@ section.section#schedule
 
         td.schedule__slot
           = image_tag "speakers/taufiq-muhammadi--small.jpg", class: "schedule__image", alt: "Taufiq"
-          .schedule__topic Remote Working as A Programmer
+          = link_to "#{bucket}/Remote-Working-for-Programmer_Taufiq-Muhammadi.pdf", class: "schedule__topic" do
+            | Remote Working as A Programmer
           .schedule__name Taufiq Muhammadi
 
       tr
@@ -128,14 +141,16 @@ section.section#schedule
 
         td.schedule__slot rowspan=2
           = image_tag "speakers/willix-halim.jpg", class: "schedule__image", alt: "Willix"
-          .schedule__topic Why Geeks Make Awesome Growth Marketers?
+          = link_to "#{bucket}/Why-Geeks-Make-Awesome-Growth-Marketers_Willix-Halim.pdf", class: "schedule__topic" do
+            | Why Geeks Make Awesome Growth Marketers?
           .schedule__name Willix Halim
 
         td.schedule__time 13:20 - 13:30
 
         td.schedule__slot
           = image_tag "speakers/didik-wicaksono.jpg", class: "schedule__image", alt: "Didik"
-          .schedule__topic Automating your workflow with Ruby
+          = link_to "#{bucket}/Automating-your-workflow-with-Ruby_Didik-Wicaksono.pdf", class: "schedule__topic" do
+            | Automating your workflow with Ruby
           .schedule__name Didik Wicaksono
 
       tr
@@ -169,7 +184,8 @@ section.section#schedule
         td.schedule__time 14:05 - 14:15
         td.schedule__slot
           = image_tag "speakers/agung-setiawan--small.png", class: "schedule__image", alt: "Agung"
-          .schedule__topic Understanding The Power of Vim
+          = link_to "#{bucket}/Understanding-the-Power-of-Vim_Agung-Setiawan.pdf", class: "schedule__topic" do
+            | Understanding The Power of Vim
           .schedule__name Agung Setiawan
 
       tr
@@ -199,7 +215,8 @@ section.section#schedule
 
         td.schedule__slot rowspan=2
           = image_tag "speakers/herdy-handoko--small.jpg", class: "schedule__image", alt: "Herdy"
-          .schedule__topic Streaming Applications with Akka Streams
+          = link_to "#{bucket}/Streaming-Applications-with-Akka_Herdy-Handoko.pdf", class: "schedule__topic" do
+            | Streaming Applications with Akka Streams
           .schedule__name Herdy Handoko
 
         td.schedule__time 15:50 - 16:00
@@ -212,7 +229,8 @@ section.section#schedule
 
         td.schedule__slot
           = image_tag "speakers/audy-tanudjaja--small.jpg", class: "schedule__image", alt: "Audy"
-          .schedule__topic Pushing Updates To Your Mobile Apps With a Single Command
+          = link_to "#{bucket}/Pushing-Updates-to-Mobile-Apps-With-a-Single-Command-Line_Audy-Tanudjaja.pdf", class: "schedule__topic" do
+            | Pushing Updates To Your Mobile Apps With a Single Command
           .schedule__name Audy Tanudjaja
 
       tr
@@ -228,21 +246,26 @@ section.section#schedule
 
         td.schedule__slot rowspan=2
           = image_tag "speakers/estu-fardani--small.jpg", class: "schedule__image", alt: "Estu"
-          .schedule__topic Testing Ansible Roles using Molecule
+          = link_to "#{bucket}/Testing-Ansible-Roles-using-Molecule_Estu-Fardani.pdf", class: "schedule__topic" do
+            | Testing Ansible Roles using Molecule
+          = link_to "#{bucket}/Testing-Ansible-Roles-using-Molecule_Estu-Fardani.ogg", class: "schedule__topic" do
+            | Vid of Demo
           .schedule__name Estu Fardani
 
         td.schedule__time 16:20 - 16:30
 
         td.schedule__slot
           = image_tag "speakers/riza-fahmi--small.jpg", class: "schedule__image", alt: "Riza"
-          .schedule__topic Picking JS Frameworks For You
+          = link_to "#{bucket}/Picking-a-JS-Framework-in-2017_Riza-Fahmi.pdf", class: "schedule__topic" do
+            | Picking a JS Frameworks in 2017
           .schedule__name Riza Fahmi
 
       tr
         td.schedule__time 16:35 - 16:45
         td.schedule__slot
           = image_tag "speakers/mufid-afif--small.jpg", class: "schedule__image", alt: "Mufid"
-          .schedule__topic It Can Break The App? The Art of Migration and Versioning
+          = link_to "#{bucket}/It-Can-Break-The-App_Muhammad-Mufid-Afif.pdf", class: "schedule__topic" do
+            | It Can Break The App? The Art of Migration and Versioning
           .schedule__name Muhammad Mufid Afif
 
       tr
@@ -250,7 +273,8 @@ section.section#schedule
 
         td.schedule__slot rowspan=2
           = image_tag "speakers/achmad-gozali.jpg", class: "schedule__image", alt: "Gozali"
-          .schedule__topic How We Automated Code Review Process
+          = link_to "#{bucket}/How-We-Automated-Code-Review-Process_Achmad-Gozali.pdf", class: "schedule__topic" do
+            | How We Automated Code Review Process
           .schedule__name Achmad Gozali
 
         td.schedule__time 16:50 - 17:00
@@ -265,7 +289,8 @@ section.section#schedule
 
         td.schedule__slot
           = image_tag "speakers/adrianus-yoza-aprilio--small.jpg", class: "schedule__image", alt: "Yoza"
-          .schedule__topic What's New on Android
+          = link_to "#{bucket}/Whats-New-on-Android_Adrianus-Yoza.pdf", class: "schedule__topic" do
+            | What's New on Android
           .schedule__name Adrianus Yoza Aprilio
 
       tr

@@ -5,7 +5,8 @@
   height: calc(100vh - 95px);
 }
 
-.apps__container, .apps__top {
+.apps__container,
+.apps__top {
   max-width: 1080px;
   height: 100%;
   margin: auto;
@@ -13,7 +14,8 @@
   text-align: center;
 }
 
-.apps__container-left, .apps__container-right {
+.apps__container-left,
+.apps__container-right {
   display: block;
 }
 
@@ -50,8 +52,8 @@
   margin-left: 20px;
 }
 
-.apps__logo-ios {
-  width: 40%;
+.apps__logo-store {
+  max-width: 18rem;
 }
 
 .apps__container-right {

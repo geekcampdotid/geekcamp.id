@@ -3,7 +3,7 @@ section.section#schedule
   header.header Schedule
 
   - bucket = "https://cdn-a.kmk-engineering.static6.com/geekcamp-2017/talks"
-  /- bucket = "http://www.geekcamp.dev:3000/2017/talks" if Rails.env.development?
+  - bucket = "http://www.geekcamp.dev:3000/2017/talks" if Rails.env.development?
 
   table.schedule
     thead
@@ -283,8 +283,8 @@ section.section#schedule
             .schedule__name Michael Ong
           .schedule__media
             = link_to "Vidio", "https://www.vidio.com/watch/793750-agile-product-management-michael-ong"
-            /= " / "
-            /= link_to "Slides", "#"
+            = " / "
+            = link_to "Slides", "#{bucket}/Agile-Product-Management_Michael-Ong.pdf"
 
       tr
         td.schedule__time.m--double.m--no-border 14:20 - 14:45

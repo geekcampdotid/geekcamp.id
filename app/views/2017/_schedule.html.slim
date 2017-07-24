@@ -21,8 +21,11 @@ section.section#schedule
       tr
         td.schedule__time 09:30 - 09:40
         td.schedule__slot.m--event
-          = link_to "#{bucket}/Opening-and-Closing-Address_Tommy-Sullivan.pdf", class: "" do
-            | Opening Address
+          = "Opening Address: "
+          .schedule__media
+            = link_to " Vidio ", "https://www.vidio.com/watch/793137-opening-tommy-sullivan"
+            = " / "
+            = link_to " Slides ", "#{bucket}/Opening-and-Closing-Address_Tommy-Sullivan.pdf"
         td.schedule__slot.m--empty colspan=2 rowspan=2 Closed
 
       tr
@@ -30,82 +33,127 @@ section.section#schedule
 
         td.schedule__slot
           = image_tag "speakers/ditesh-gathani--small.jpg", class: "schedule__image", alt: "Ditesh"
-          = link_to "#{bucket}/Scaling-Lessons-from-Grab-Building-the-Next-Unicorn-in-Indonesia_Ditesh-Gathani.pdf", class: "schedule__topic" do
+          .schedule__topic
             | Scaling Lessons from Grab - Building the Next Unicorn in Indonesia
-          .schedule__name Ditesh Gathani
+            .schedule__name by Ditesh Gathani
+          .schedule__media
+            = link_to "Vidio", "https://www.vidio.com/watch/793653-scaling-lessons-from-grab-building-the-next-unicorn-in-indonesia-ditesh-gathani"
+            = " / "
+            = link_to "Slides", "#{bucket}/Scaling-Lessons-from-Grab-Building-the-Next-Unicorn-in-Indonesia_Ditesh-Gathani.pdf"
 
       tr
         td.schedule__time rowspan=2 10:20 - 10:45
 
         td.schedule__slot rowspan=2
           = image_tag "speakers/simon-sturmer.jpg", class: "schedule__image", alt: "Simon"
-          = link_to "#{bucket}/The-Future-of-Front-End-Engineering_Simon-Sturmer.pdf", class: "schedule__topic" do
+          .schedule__topic
             | The Future of Front-End Engineering
-          .schedule__name Simon Stürmer
+            .schedule__name Simon Stürmer
+          .schedule__media
+            = link_to "Vidio", "https://www.vidio.com/watch/793755-the-future-of-front-end-engineering-simon-sturmer"
+            = " / "
+            = link_to "Slides", "#{bucket}/The-Future-of-Front-End-Engineering_Simon-Sturmer.pdf"
 
         td.schedule__time 10:20 - 10:30
 
         td.schedule__slot
           = image_tag "smile.png", class: "schedule__image", alt: "Smile"
-          .schedule__topic Application of Deep Learning for Industry
-          .schedule__name Afif Akbar Iskandar
+          .schedule__topic
+            | Application of Deep Learning for Industry
+            .schedule__name Afif Akbar Iskandar
+          .schedule__media
+            = link_to "Vidio", "https://www.vidio.com/watch/793742-application-of-deep-learning-for-industry-afif-akbar-iskandar"
+            /= " / "
+            /= link_to "Slides", "#"
 
       tr
         td.schedule__time 10:35 - 10:45
 
         td.schedule__slot
           = image_tag "speakers/ardian-franindo--small.jpg", class: "schedule__image", alt: "Ardian"
-          .schedule__topic Mobile App's Force Update Mechanism Using Firebase Remote Config
-          .schedule__name Ardian Franindo
+          .schedule__topic
+            | Mobile App's Force Update Mechanism, <small>Using Firebase Remote Config</small>
+            .schedule__name Ardian Franindo
+          .schedule__media
+            = link_to "Vidio", "https://www.vidio.com/watch/793620-mobile-apps-force-update-mechanism-using-firebase-remote-config-ardian-franindo"
+            /= " / "
+            /= link_to "Slides", "#"
 
       tr
         td.schedule__time rowspan=2 10:50 - 11:15
 
         td.schedule__slot rowspan=2
           = image_tag "speakers/hadikusuma-wahab.jpg", class: "schedule__image", alt: "Diku"
-          = link_to "#{bucket}/Mastering-Effective-Communication_Hadikusuma-Wahab.pdf", class: "schedule__topic" do
+          .schedule__topic
             | Mastering Effective Communication
-          .schedule__name Hadikusuma Wahab
+            .schedule__name Hadikusuma Wahab
+          .schedule__media
+            = link_to "Vidio", "https://www.vidio.com/watch/793766-mastering-effective-communication-hadikusuma-wahab"
+            = " / "
+            = link_to "Slides", "#{bucket}/Mastering-Effective-Communication_Hadikusuma-Wahab.pdf"
 
         td.schedule__time 10:50 - 11:00
 
         td.schedule__slot
           = image_tag "speakers/ifnu-bima-fatkhan.jpg", class: "schedule__image", alt: "Ifnu"
-          .schedule__topic Our Battle Against Technical Debt
-          .schedule__name Ifnu Bima Fatkhan
+          .schedule__topic
+            | Our Battle Against Technical Debt
+            .schedule__name Ifnu Bima Fatkhan
+          .schedule__media
+            = link_to "Vidio", "https://www.vidio.com/watch/793666-our-battle-against-technical-debt-ifnu-bima-fatkhan"
+            /= " / "
+            /= link_to "Slides", "#"
 
       tr
         td.schedule__time 11:05 - 11:15
 
         td.schedule__slot
           = image_tag "speakers/mochamad-fathoni.jpg", class: "schedule__image", alt: "Mochamad"
-          .schedule__topic IoT and Unemployment: The effect of internet illiteracy. Case Studi in Bumiayu, Brebes, Central Java
-          .schedule__name Mochamad Fathoni
+          .schedule__topic
+            | IoT and Unemployment: The effect of internet illiteracy.
+            .schedule__name Mochamad Fathoni
+          .schedule__media
+            = link_to "Vidio", "https://www.vidio.com/watch/793650-iot-and-unemployment-the-effect-of-internet-illiteracy-mochamad-fathoni"
+            /= " / "
+            /= link_to "Slides", "#"
 
       tr
         td.schedule__time rowspan=2 11:20 - 11:45
 
         td.schedule__slot rowspan=2
           = image_tag "speakers/giovanni-sakti--small.jpg", class: "schedule__image", alt: "Giovanni"
-          = link_to "#{bucket}/Building-a-Programming-Language-101_Giovanni-Sakti.pdf", class: "schedule__topic" do
+          .schedule__topic
             | Building a Programming Language 101
-          .schedule__name Giovanni Sakti
+            .schedule__name Giovanni Sakti
+          .schedule__media
+            = link_to "Vidio", "https://www.vidio.com/watch/793893-building-a-programming-language-101_giovanni-sakti-small"
+            = " / "
+            = link_to "Slides", "#{bucket}/Building-a-Programming-Language-101_Giovanni-Sakti.pdf"
 
         td.schedule__time 11:20 - 11:30
 
         td.schedule__slot
           = image_tag "speakers/vina-melody--small.jpg", class: "schedule__image", alt: "Vina"
-          = link_to "#{bucket}/Swift-Higher-Order-Functions_Vina-Melody.pdf", class: "schedule__topic" do
+          .schedule__topic
             | Practical use of Swift's Higher Order Function
-          .schedule__name Vina Melody
+            .schedule__name Vina Melody
+          .schedule__media
+            = link_to "Vidio", "https://www.vidio.com/watch/793664-practical-use-of-swifts-higher-order-function-vina-melody"
+            = " / "
+            = link_to "Slides", "#{bucket}/Swift-Higher-Order-Functions_Vina-Melody.pdf"
 
       tr
         td.schedule__time.m--no-border 11:35 - 11:45
 
         td.schedule__slot
           = image_tag "speakers/tito.jpg", class: "schedule__image", alt: "Smile"
-          .schedule__topic How Do We Look for a Memory Leak in Rails App
-          .schedule__name Tito Pandu Brahmanto
+          .schedule__topic
+            | How Do We Look for a Memory Leak in Rails App
+            .schedule__name Tito Pandu Brahmanto
+          .schedule__media
+            = link_to "Vidio", "https://www.vidio.com/watch/793602-how-do-we-look-for-a-memory-leak-in-rails-tito-pandu-brahmanto"
+            /= " / "
+            /= link_to "Slides", "#"
 
       tr
         td.schedule__time 11:50 - 12:50
@@ -116,85 +164,127 @@ section.section#schedule
 
         td.schedule__slot rowspan=2
           = image_tag "speakers/mohan-krishnan.jpg", class: "schedule__image", alt: "Mohan"
-          .schedule__topic Real World DevOps - What works and what sure as hell doesn't.
-          .schedule__name Mohan Krishnan
+          .schedule__topic
+            | Real World DevOps - What works and what sure as hell doesn't.
+            .schedule__name Mohan Krishnan
+          .schedule__media
+            = link_to "Vidio", "https://www.vidio.com/watch/793887-real-world-devops-mohan-krishnan"
+            /= " / "
+            /= link_to "Slides", "#"
 
         td.schedule__time 12:50 - 13:00
 
         td.schedule__slot
           = image_tag "speakers/jaka-wiradisuria--small.jpg", class: "schedule__image", alt: "Jaka"
-          = link_to "#{bucket}/The-Role-of-Empathy-in-UX-Design-Process_Jaka-Wiradisuria.pdf", class: "schedule__topic" do
+          .schedule__topic
             | UX Design Process For The Non-tech Savvy Users
-          .schedule__name Jaka Wiradisuria
+            .schedule__name Jaka Wiradisuria
+          .schedule__media
+            = link_to "Vidio", "https://www.vidio.com/watch/793691-ux-design-process-for-the-non-tech-savvy-users-jaka-wiradisuria"
+            = " / "
+            = link_to "Slides", "#{bucket}/The-Role-of-Empathy-in-UX-Design-Process_Jaka-Wiradisuria.pdf"
 
       tr
         td.schedule__time 13:05 - 13:15
 
         td.schedule__slot
           = image_tag "speakers/taufiq-muhammadi--small.jpg", class: "schedule__image", alt: "Taufiq"
-          = link_to "#{bucket}/Remote-Working-for-Programmer_Taufiq-Muhammadi.pdf", class: "schedule__topic" do
+          .schedule__topic
             | Remote Working as A Programmer
-          .schedule__name Taufiq Muhammadi
+            .schedule__name Taufiq Muhammadi
+          .schedule__media
+            = link_to "Vidio", "https://www.vidio.com/watch/793689-remote-working-as-a-programmer-taufiq-muhammadi"
+            = " / "
+            = link_to "Slides", "#{bucket}/Remote-Working-for-Programmer_Taufiq-Muhammadi.pdf"
 
       tr
         td.schedule__time rowspan=2 13:20 - 13:45
 
         td.schedule__slot rowspan=2
           = image_tag "speakers/willix-halim.jpg", class: "schedule__image", alt: "Willix"
-          = link_to "#{bucket}/Why-Geeks-Make-Awesome-Growth-Marketers_Willix-Halim.pdf", class: "schedule__topic" do
+          .schedule__topic
             | Why Geeks Make Awesome Growth Marketers?
-          .schedule__name Willix Halim
+            .schedule__name Willix Halim
+          .schedule__media
+            = link_to "Vidio", "https://www.vidio.com/watch/793728-why-geeks-make-awesome-growth-marketers-willix-halim"
+            = " / "
+            = link_to "Slides", "#{bucket}/Why-Geeks-Make-Awesome-Growth-Marketers_Willix-Halim.pdf"
 
         td.schedule__time 13:20 - 13:30
 
         td.schedule__slot
           = image_tag "speakers/didik-wicaksono.jpg", class: "schedule__image", alt: "Didik"
-          = link_to "#{bucket}/Automating-your-workflow-with-Ruby_Didik-Wicaksono.pdf", class: "schedule__topic" do
+          .schedule__topic
             | Automating your workflow with Ruby
-          .schedule__name Didik Wicaksono
+            .schedule__name Didik Wicaksono
+          .schedule__media
+            = link_to "Vidio", "https://www.vidio.com/watch/793700-automating-your-workflow-with-ruby-didik-wicaksono"
+            = " / "
+            = link_to "Slides", "#{bucket}/Automating-your-workflow-with-Ruby_Didik-Wicaksono.pdf"
 
       tr
         td.schedule__time 13:35 - 13:45
 
         td.schedule__slot
-          /= image_tag "speakers/mochamad-fathoni.jpg", class: "schedule__image", alt: "Mochamad"
-          /= image_tag "smile.png", class: "schedule__image", alt: "Smile"
-          /.schedule__topic IoT and Unemployment: The effect of internet illiteracy. Case Studi in Bumiayu, Brebes, Central Java
-          /.schedule__name Mochamad Fathoni
           = image_tag "speakers/buyung_bahari.png", class: "schedule__image", alt: "Buyung"
           = image_tag "speakers/freddy_munandar.png", class: "schedule__image", alt: "Freddy"
-          .schedule__topic How to Grow Tech Community
-          .schedule__name Buyung Bahari &amp;  Freddy Munandar
+          .schedule__topic
+            | How to Grow Tech Community
+            .schedule__name Buyung Bahari &amp; Freddy Munandar
+          .schedule__media
+            = link_to "Vidio", "https://www.vidio.com/watch/793747-how-to-grow-tech-community-buyung-bahari-freddy-munandar"
+            /= " / "
+            /= link_to "Slides", "#"
 
       tr
         td.schedule__time rowspan=2 13:50 - 14:15
 
         td.schedule__slot rowspan=2
           = image_tag "speakers/mike-mazur.jpg", class: "schedule__image", alt: "Mike"
-          .schedule__name.m--no-topic Mike Mazur
+          .schedule__topic
+            | Moving Fast with XP
+            .schedule__name Mike Mazur
+          .schedule__media
+            = link_to "Vidio", "https://www.vidio.com/watch/793765-moving-fast-with-xp-mike-mazur"
+            /= " / "
+            /= link_to "Slides", "#"
 
         td.schedule__time 13:50 - 14:00
 
         td.schedule__slot
           = image_tag "speakers/hengki-sihombing--small.jpg", class: "schedule__image", alt: "Hengki"
-          .schedule__topic Using NSQ with microservices
-          .schedule__name Hengki Sihombing
+          .schedule__topic
+            | Using NSQ with microservices
+            .schedule__name Hengki Sihombing
+          .schedule__media
+            = link_to "Vidio", "https://www.vidio.com/watch/793706-using-nsq-with-microservices-hengki-sihombing"
+            /= " / "
+            /= link_to "Slides", "#"
 
       tr
         td.schedule__time 14:05 - 14:15
         td.schedule__slot
           = image_tag "speakers/agung-setiawan--small.png", class: "schedule__image", alt: "Agung"
-          = link_to "#{bucket}/Understanding-the-Power-of-Vim_Agung-Setiawan.pdf", class: "schedule__topic" do
+          .schedule__topic
             | Understanding The Power of Vim
-          .schedule__name Agung Setiawan
+            .schedule__name Agung Setiawan
+          .schedule__media
+            = link_to "Vidio", "https://www.vidio.com/watch/793701-understanding-the-power-of-vim_agung-setiawan"
+            = " / "
+            = link_to "Slides", "#{bucket}/Understanding-the-Power-of-Vim_Agung-Setiawan.pdf"
 
       tr
         td.schedule__time rowspan=2 14:20 - 14:45
 
         td.schedule__slot rowspan=2
           = image_tag "speakers/michael-ong.jpg", class: "schedule__image", alt: "Michael"
-          .schedule__topic Agile Product Management
-          .schedule__name Michael Ong
+          .schedule__topic
+            | Agile Product Management
+            .schedule__name Michael Ong
+          .schedule__media
+            = link_to "Vidio", "https://www.vidio.com/watch/793750-agile-product-management-michael-ong"
+            /= " / "
+            /= link_to "Slides", "#"
 
       tr
         td.schedule__time.m--double.m--no-border 14:20 - 14:45
@@ -202,9 +292,13 @@ section.section#schedule
         td.schedule__slot
           = image_tag "speakers/andreas-hadimulyono--small.jpg", class: "schedule__image", alt: "Andreas"
           = image_tag "speakers/aneesh-chandra--small.jpg", class: "schedule__image", alt: "Aneesh"
-          .schedule__topic Data Engineering @ Grab
-          .schedule__name Andreas Hadimulyono &amp; Aneesh Chandra PN
-
+          .schedule__topic
+            | Data Engineering @ Grab
+            .schedule__name Andreas Hadimulyono &amp; Aneesh Chandra PN
+          .schedule__media
+            = link_to "Vidio", "https://www.vidio.com/watch/793177-data-engineering-grab-andreas-hadimulyono-aneesh-chandra-pn"
+            /= " / "
+            /= link_to "Slides", "#"
 
       tr
         td.schedule__time 14:50 - 15:50
@@ -215,93 +309,125 @@ section.section#schedule
 
         td.schedule__slot rowspan=2
           = image_tag "speakers/herdy-handoko--small.jpg", class: "schedule__image", alt: "Herdy"
-          = link_to "#{bucket}/Streaming-Applications-with-Akka_Herdy-Handoko.pdf", class: "schedule__topic" do
+          .schedule__topic
             | Streaming Applications with Akka Streams
-          .schedule__name Herdy Handoko
+            .schedule__name Herdy Handoko
+          .schedule__media
+            = link_to "Vidio", "https://www.vidio.com/watch/793734-streaming-applications-with-akka-streams-herdy-handoko"
+            = " / "
+            = link_to "Slides", "#{bucket}/Streaming-Applications-with-Akka_Herdy-Handoko.pdf"
+
+
 
         td.schedule__time 15:50 - 16:00
 
-        /td.schedule__slot
-        /  /= image_tag "speakers/sudheer.jpg", class: "schedule__image", alt: "Sudheer"
-        /  = image_tag "smile.png", class: "schedule__image", alt: "Smile"
-        /  .schedule__topic Choose best UI Component libraries for Single page applications
-        /  .schedule__name Sudheer
-
         td.schedule__slot
           = image_tag "speakers/audy-tanudjaja--small.jpg", class: "schedule__image", alt: "Audy"
-          = link_to "#{bucket}/Pushing-Updates-to-Mobile-Apps-With-a-Single-Command-Line_Audy-Tanudjaja.pdf", class: "schedule__topic" do
+          .schedule__topic
             | Pushing Updates To Your Mobile Apps With a Single Command
-          .schedule__name Audy Tanudjaja
+            .schedule__name Audy Tanudjaja
+          .schedule__media
+            = link_to "Truncated Vidio (looking for full video)", "https://www.vidio.com/watch/793585-pushing-updates-to-your-mobile-apps-with-a-single-command-audy-tanudjaja"
+            = " / "
+            = link_to "Slides", "#{bucket}/Pushing-Updates-to-Mobile-Apps-With-a-Single-Command-Line_Audy-Tanudjaja.pdf"
+
 
       tr
         td.schedule__time 16:05 - 16:15
 
         td.schedule__slot
           = image_tag "speakers/ady-rahmat-ma--small.jpg", class: "schedule__image", alt: "Ady"
-          .schedule__topic Building Microservice with Go-Kit
-          .schedule__name Ady Rahmat MA
+          .schedule__topic
+            | Building Microservice with Go-Kit
+            .schedule__name Ady Rahmat MA
+          .schedule__media
+            = link_to "Vidio", "https://www.vidio.com/watch/793714-building-microservice-with-go-kit-ady-rahmat-ma"
+            /= " / "
+            /= link_to "Slides", "#"
 
       tr
         td.schedule__time rowspan=2 16:20 - 16:45
 
         td.schedule__slot rowspan=2
           = image_tag "speakers/estu-fardani--small.jpg", class: "schedule__image", alt: "Estu"
-          = link_to "#{bucket}/Testing-Ansible-Roles-using-Molecule_Estu-Fardani.pdf", class: "schedule__topic" do
+          .schedule__topic
             | Testing Ansible Roles using Molecule
-          = link_to "#{bucket}/Testing-Ansible-Roles-using-Molecule_Estu-Fardani.ogg", class: "schedule__topic" do
-            | Vid of Demo
-          .schedule__name Estu Fardani
+            .schedule__name Estu Fardani
+          .schedule__media
+            = link_to "Vidio", "https://www.vidio.com/watch/793751-testing-ansible-roles-using-molecule-estu-fardani"
+            = " / "
+            = link_to "Slides", "#{bucket}/Testing-Ansible-Roles-using-Molecule_Estu-Fardani.pdf"
+            = " / "
+            = link_to "Demo", "#{bucket}/Testing-Ansible-Roles-using-Molecule_Estu-Fardani.ogg"
+
 
         td.schedule__time 16:20 - 16:30
 
         td.schedule__slot
           = image_tag "speakers/riza-fahmi--small.jpg", class: "schedule__image", alt: "Riza"
-          = link_to "#{bucket}/Picking-a-JS-Framework-in-2017_Riza-Fahmi.pdf", class: "schedule__topic" do
+          .schedule__topic
             | Picking a JS Frameworks in 2017
-          .schedule__name Riza Fahmi
+            .schedule__name Riza Fahmi
+          .schedule__media
+            = link_to "Vidio", "https://www.vidio.com/watch/793713-picking-a-js-frameworks-in-2017-riza-fahmi"
+            = " / "
+            = link_to "Slides", "##{bucket}/Picking-a-JS-Framework-in-2017_Riza-Fahmi.pdf"
+
 
       tr
         td.schedule__time 16:35 - 16:45
         td.schedule__slot
           = image_tag "speakers/mufid-afif--small.jpg", class: "schedule__image", alt: "Mufid"
-          = link_to "#{bucket}/It-Can-Break-The-App_Muhammad-Mufid-Afif.pdf", class: "schedule__topic" do
-            | It Can Break The App? The Art of Migration and Versioning
-          .schedule__name Muhammad Mufid Afif
+          .schedule__topic
+            | It Can Break the App? The Art of Migration and Versioning
+            .schedule__name Muhammad Mufid Afif
+          .schedule__media
+            = link_to "Vidio", "https://www.vidio.com/watch/793594-it-can-break-the-app-muhammad-mufid-afif"
+            = " / "
+            = link_to "Slides", "##{bucket}/It-Can-Break-the-App_Muhammad-Mufid-Afif.pdf"
 
       tr
-        td.schedule__time rowspan=2 16:50 - 17:15
+        td.schedule__time.m--double rowspan=2 16:50 - 17:15
 
         td.schedule__slot rowspan=2
           = image_tag "speakers/achmad-gozali.jpg", class: "schedule__image", alt: "Gozali"
-          = link_to "#{bucket}/How-We-Automated-Code-Review-Process_Achmad-Gozali.pdf", class: "schedule__topic" do
+          .schedule__topic
             | How We Automated Code Review Process
-          .schedule__name Achmad Gozali
+            .schedule__name Achmad Gozali
+          .schedule__media
+            = link_to "Vidio", "https://www.vidio.com/watch/793707-how-we-automated-code-review-process-achmad-gozali"
+            = " / "
+            = link_to "Slides", "#{bucket}/How-We-Automated-Code-Review-Process_Achmad-Gozali.pdf"
 
         td.schedule__time 16:50 - 17:00
 
         td.schedule__slot
-          = image_tag "speakers/irvan-fahlepi--small.png", class: "schedule__image", alt: "Irvan"
-          .schedule__topic Hybrid App Is The New Classic
-          .schedule__name Irvan Fahlepi
-
-      tr
-        td.schedule__time.m--no-border 17:05 - 17:15
-
-        td.schedule__slot
           = image_tag "speakers/adrianus-yoza-aprilio--small.jpg", class: "schedule__image", alt: "Yoza"
-          = link_to "#{bucket}/Whats-New-on-Android_Adrianus-Yoza.pdf", class: "schedule__topic" do
+          .schedule__topic
             | What's New on Android
-          .schedule__name Adrianus Yoza Aprilio
+            .schedule__name Adrianus Yoza Aprilio
+          .schedule__media
+            = link_to "Vidio", "https://www.vidio.com/watch/793743-whats-new-on-android-adrianus-yoza-aprilio"
+            = " / "
+            = link_to "Slides", "#{bucket}/Whats-New-on-Android_Adrianus-Yoza.pdf"
 
       tr
-        td.schedule__time 17:20 - 17:50
+
+        td.schedule__slot.m--empty colspan=2 rowspan=3 Closed
+
+      tr
+        td.schedule__time.m--double 17:20 - 17:50
 
         td.schedule__slot
           = image_tag "speakers/jim-halkyard.jpg", class: "schedule__image", alt: "Jim"
-          .schedule__topic How to Architect a Collaborative Big Data Platform
-          .schedule__name Jim Halkyard
-
-        td.schedule__slot.m--empty colspan=2 rowspan=2 Closed
+          .schedule__topic
+            | How to Architect a Collaborative Big Data Platform
+            .schedule__name Jim Halkyard
+          /.schedule__media
+          /  = link_to "Vidio", "#"
+          /  = " / "
+          /  = link_to "Slides", "#"
+          /
 
       tr
         td.schedule__time.m--no-border 17:55 - 18:00

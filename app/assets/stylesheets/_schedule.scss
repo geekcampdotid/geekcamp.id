@@ -42,16 +42,9 @@
 
 .schedule__topic {
   display: block;
-  font-weight: 600;
+  font-weight: bold;
   text-decoration: none;
 
-  &[href] {
-    color: #1D62AE;
-
-    &:hover {
-      text-decoration: underline;
-    }
-  }
 }
 
 .schedule__topic.m--tbd {
@@ -60,6 +53,31 @@
   line-height: 4rem;
 }
 
+.schedule__name {
+  display: inline;
+  padding-left: 0.5rem;
+  font-weight: normal;
+}
+
+.schedule__name.m--no-topic {
+  font-weight: bold;
+  line-height: 4rem;
+}
+
+.schedule__media {
+  display: inline-block;
+  font-weight: normal;
+
+  a[href] {
+    color: #1D62AE;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+
 .schedule__image {
   border: 3px solid #D5E2E2;
   border-radius: 50%;
@@ -67,15 +85,5 @@
   height: 4rem;
   margin-right: 10px;
   vertical-align: middle;
-}
-
-.schedule__name {
-  display: inline;
-  vertical-align: middle;
-}
-
-.schedule__name.m--no-topic {
-  font-weight: bold;
-  line-height: 4rem;
 }
 

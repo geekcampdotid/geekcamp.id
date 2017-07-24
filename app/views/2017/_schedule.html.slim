@@ -3,7 +3,7 @@ section.section#schedule
   header.header Schedule
 
   - bucket = "https://cdn-a.kmk-engineering.static6.com/geekcamp-2017/talks"
-  - bucket = "http://www.geekcamp.dev:3000/2017/talks" if Rails.env.development?
+  /- bucket = "http://www.geekcamp.dev:3000/2017/talks" if Rails.env.development?
 
   table.schedule
     thead
@@ -72,12 +72,12 @@ section.section#schedule
         td.schedule__slot
           = image_tag "speakers/ardian-franindo--small.jpg", class: "schedule__image", alt: "Ardian"
           .schedule__topic
-            | Mobile App's Force Update Mechanism, <small>Using Firebase Remote Config</small>
+            | Firebase Remote Config untuk Mekanisme Force Update
             .schedule__name Ardian Franindo
           .schedule__media
             = link_to "Vidio", "https://www.vidio.com/watch/793620-mobile-apps-force-update-mechanism-using-firebase-remote-config-ardian-franindo"
-            /= " / "
-            /= link_to "Slides", "#"
+            = " / "
+            = link_to "Slides", "#{bucket}/Firebase-Remote-Config-untuk-Mekanisme-Force-Update_Ardian-Franindo.pdf"
 
       tr
         td.schedule__time rowspan=2 10:50 - 11:15
@@ -101,8 +101,8 @@ section.section#schedule
             .schedule__name Ifnu Bima Fatkhan
           .schedule__media
             = link_to "Vidio", "https://www.vidio.com/watch/793666-our-battle-against-technical-debt-ifnu-bima-fatkhan"
-            /= " / "
-            /= link_to "Slides", "#"
+            = " / "
+            = link_to "Slides", "#{bucket}/Our-Battle-Against-Technical-Debt_Ifnu-Bima-Fatkhan.pdf"
 
       tr
         td.schedule__time 11:05 - 11:15
@@ -114,8 +114,8 @@ section.section#schedule
             .schedule__name Mochamad Fathoni
           .schedule__media
             = link_to "Vidio", "https://www.vidio.com/watch/793650-iot-and-unemployment-the-effect-of-internet-illiteracy-mochamad-fathoni"
-            /= " / "
-            /= link_to "Slides", "#"
+            = " / "
+            = link_to "Slides", "#{bucket}/IoT-and-Unemployment_Mochamad-Fathoni.pdf"
 
       tr
         td.schedule__time rowspan=2 11:20 - 11:45
@@ -148,12 +148,12 @@ section.section#schedule
         td.schedule__slot
           = image_tag "speakers/tito.jpg", class: "schedule__image", alt: "Smile"
           .schedule__topic
-            | How Do We Look for a Memory Leak in Rails App
+            | How Do We Look for a Memory Leak in Rails Apps
             .schedule__name Tito Pandu Brahmanto
           .schedule__media
             = link_to "Vidio", "https://www.vidio.com/watch/793602-how-do-we-look-for-a-memory-leak-in-rails-tito-pandu-brahmanto"
-            /= " / "
-            /= link_to "Slides", "#"
+            = " / "
+            = link_to "Slides", "#{bucket}/How-Do-We-Look-for-a-Memory-Leak-in-Rails-Apps_Tito-Pandu-Brahmanto.pdf"
 
       tr
         td.schedule__time 11:50 - 12:50
@@ -233,8 +233,8 @@ section.section#schedule
             .schedule__name Buyung Bahari &amp; Freddy Munandar
           .schedule__media
             = link_to "Vidio", "https://www.vidio.com/watch/793747-how-to-grow-tech-community-buyung-bahari-freddy-munandar"
-            /= " / "
-            /= link_to "Slides", "#"
+            = " / "
+            = link_to "Slides", "#{bucket}/How-to-Grow-Tech-Community_Buyung-Bahari_Freddy-Munandar.pdf"
 
       tr
         td.schedule__time rowspan=2 13:50 - 14:15
@@ -297,8 +297,8 @@ section.section#schedule
             .schedule__name Andreas Hadimulyono &amp; Aneesh Chandra PN
           .schedule__media
             = link_to "Vidio", "https://www.vidio.com/watch/793177-data-engineering-grab-andreas-hadimulyono-aneesh-chandra-pn"
-            /= " / "
-            /= link_to "Slides", "#"
+            = " / "
+            = link_to "Slides", "#{bucket}/Data-Engineering-at-Grab_Andreas-Hadimulyono_Aneesh-Chandra-PN.pdf"
 
       tr
         td.schedule__time 14:50 - 15:50
@@ -342,8 +342,8 @@ section.section#schedule
             .schedule__name Ady Rahmat MA
           .schedule__media
             = link_to "Vidio", "https://www.vidio.com/watch/793714-building-microservice-with-go-kit-ady-rahmat-ma"
-            /= " / "
-            /= link_to "Slides", "#"
+            = " / "
+            = link_to "Slides", "#{bucket}/Building-Microservice-with-Go-Kit_Ady-Rahmat-MA.pdf"
 
       tr
         td.schedule__time rowspan=2 16:20 - 16:45

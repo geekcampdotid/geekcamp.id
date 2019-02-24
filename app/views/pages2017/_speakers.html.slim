@@ -1,56 +1,75 @@
 section.section#speakers
   header.header
-    small(style="font-size: 1.25rem; padding-right: 1rem;") (some of)
-    | The Speakers 
+    | Your Favorite Speakers
+    br
+    small(style="font-size: 1.25rem; padding-right: 1rem;") (based on our feedback survey)
 
   .speaker__container
 
     .speaker
       = image_tag "speakers/ditesh-gathani--small.jpg", class: 'speaker__image', alt: 'Ditesh'
-      .speaker__name Ditesh Gathani
+      .speaker__name #1. Ditesh Gathani
       .speaker__title Director of Engineering at Grab
 
     .speaker
-      = image_tag "speakers/mohan-krishnan.jpg", class: 'speaker__image', alt: 'Mohan'
-      .speaker__name Mohan Krishnan
-      .speaker__title CTO of KMKOnline
-
-    .speaker
-      = image_tag "speakers/willix-halim.jpg", class: 'speaker__image', alt: 'Willix'
-      .speaker__name Willix Halim
-      .speaker__title COO of Bukalapak
-
-    .speaker
-      = image_tag "speakers/hadikusuma-wahab.jpg", class: 'speaker__image', alt: 'Diku'
-      .speaker__name Hadikusuma Wahab
-      .speaker__title VP Product at KMKOnline
-
-    .speaker
-      = image_tag "speakers/jim-halkyard.jpg", class: 'speaker__image', alt: 'Jim'
-      .speaker__name Jim Halkyard
-      .speaker__title Cloud Consultant at Google
-
-    .speaker
       = image_tag "speakers/simon-sturmer.jpg", class: 'speaker__image', alt: 'Simon'
-      .speaker__name Simon Stürmer
+      .speaker__name #2. Simon Stürmer
       .speaker__title Founder & CTO of KodeFox; formerly Facebook Engineering
 
     .speaker
-      = image_tag "speakers/mike-mazur.jpg", class: 'speaker__image', alt: 'Mike'
-      .speaker__name Mike Mazur
-      .speaker__title VP of Engineering at BBM
+      = image_tag "speakers/willix-halim.jpg", class: 'speaker__image', alt: 'Willix'
+      .speaker__name #3. Willix Halim
+      .speaker__title COO of Bukalapak
+
+    .speaker
+      = image_tag "speakers/riza-fahmi--big.jpg", class: 'speaker__image', alt: 'Riza'
+      .speaker__name #4. Riza Fahmi
+      .speaker__title Curriculum Director of Hacktiv8
+
+    .speaker
+      = image_tag "speakers/mohan-krishnan.jpg", class: 'speaker__image', alt: 'Mohan'
+      .speaker__name #5. Mohan Krishnan
+      .speaker__title CTO of KMKOnline
+
+    .speaker
+      = image_tag "speakers/hadikusuma-wahab.jpg", class: 'speaker__image', alt: 'Diku'
+      .speaker__name #6. Hadikusuma Wahab
+      .speaker__title VP Product at KMKOnline
+
+    .speaker
+      - if [true, false].sample
+        = image_tag "speakers/andreas-hadimulyono.jpg", class: 'speaker__image', alt: 'Andreas'
+      - else
+        = image_tag "speakers/aneesh-chandra.jpg", class: 'speaker__image', alt: 'Aneesh'
+      .speaker__name #7. Andreas Hadimulyono &amp; Aneesh Chandra PN
+      .speaker__title Data Engineers at Grab
 
     .speaker
       = image_tag "speakers/ifnu-bima-fatkhan.jpg", class: 'speaker__image', alt: 'Ifnu'
-      .speaker__name Ifnu Bima Fatkhan
+      .speaker__name #8. Ifnu Bima Fatkhan
       .speaker__title Development Manager at blibli
 
     .speaker
-      = image_tag "speakers/michael-ong.jpg", class: 'speaker__image', alt: 'Michael'
-      .speaker__name Michael Ong
-      .speaker__title Coach and Founder at The Collab Folks
+      = image_tag "speakers/agung-setiawan.jpg", class: 'speaker__image', alt: 'Agung'
+      .speaker__name #9. Agung Setiawan
+      .speaker__title Software Engineer at Bukalapak
 
     .speaker
-      = image_tag "speakers/didik-wicaksono.jpg", class: 'speaker__image', alt: 'Didik'
-      .speaker__name Didik Wicaksono
-      .speaker__title A father, CTO of Cookpad Indonesia
+      = image_tag "speakers/mike-mazur.jpg", class: 'speaker__image', alt: 'Mike'
+      .speaker__name #10. Mike Mazur
+      .speaker__title VP of Engineering at BBM
+
+    /.speaker
+    /  = image_tag "speakers/jim-halkyard.jpg", class: 'speaker__image', alt: 'Jim'
+    /  .speaker__name Jim Halkyard
+    /  .speaker__title Cloud Consultant at Google
+    /
+    /.speaker
+    /  = image_tag "speakers/michael-ong.jpg", class: 'speaker__image', alt: 'Michael'
+    /  .speaker__name Michael Ong
+    /  .speaker__title Coach and Founder at The Collab Folks
+    /
+    /.speaker
+    /  = image_tag "speakers/didik-wicaksono.jpg", class: 'speaker__image', alt: 'Didik'
+    /  .speaker__name Didik Wicaksono
+    /  .speaker__title A father, CTO of Cookpad Indonesia

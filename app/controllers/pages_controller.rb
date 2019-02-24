@@ -3,8 +3,13 @@ class PagesController < ApplicationController
   def home
   end
 
-  def ticket
+
+  def kode_etik
   end
+
+  def code_of_conduct
+  end
+
 
   def cfp
   end
@@ -12,14 +17,13 @@ class PagesController < ApplicationController
   def new_cfp
   end
 
+
+  def ticket
+  end
+
   def sponsor
   end
 
-  def code_of_conduct
-  end
-
-  def kode_etik
-  end
 
   def app
   end

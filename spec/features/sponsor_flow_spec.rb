@@ -4,9 +4,8 @@ feature "Sponsorship Flow" do
 
   scenario "Visitors can navigate to the Sponsorship page" do
     visit home_path
-    click_link "Sponsor"
-    expect(page.current_url).to include(home_path(anchor: "organizers"))
+    click_link "Become a Sponsor!", match: :first
+    expect(page.current_url).to include(sponsor_path)
   end
-
 
 end

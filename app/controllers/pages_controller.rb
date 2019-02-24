@@ -6,9 +6,6 @@ class PagesController < ApplicationController
   def ticket
   end
 
-  def home_2015
-  end
-
   def cfp
   end
 
@@ -28,9 +25,6 @@ class PagesController < ApplicationController
   end
 
   def get_there
-  end
-
-  def faces
   end
 
 end

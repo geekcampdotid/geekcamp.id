@@ -1,10 +1,17 @@
 - content_for :title do
-  | CFP | GeekCamp 2017
-
+  | New Talk! | GeekCamp.id
 
 // Would be interesting to try this to make the form more native:
 // https://morningstudio.com.au/blog/2013/06/how-to-style-google-forms/
 
-iframe#cfp-form src="https://docs.google.com/forms/d/e/1FAIpQLSfES5a68DYdQX_2jbCsytvkFEtY_zkUS4FJPgYVpCQxuLW6qw/viewform?embedded=true" width="760" height="1100" frameborder="0" marginheight="0" marginwidth="0" allowtransparency="true"
+iframe#cfp-form(
+  src="https://docs.google.com/forms/d/e/1FAIpQLSfES5a68DYdQX_2jbCsytvkFEtY_zkUS4FJPgYVpCQxuLW6qw/viewform?embedded=true"
+  width="760"
+  height="1100"
+  frameborder="0"
+  marginheight="0"
+  marginwidth="0"
+  allowtransparency="true"
+)
   | Loading...
 

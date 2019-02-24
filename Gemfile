@@ -5,17 +5,17 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-ruby '2.4.0'
+ruby '2.5.1'
 
-gem 'rails', '5.0.2'
+gem 'rails'
 gem 'pg'
+gem 'puma'
 
 gem 'rack'
 gem 'rack-rewrite',           github: 'jtrupiano/rack-rewrite'
 
 gem 'slim-rails'
 
-gem 'therubyracer'
 gem 'uglifier',   '>= 1.3.0'
 gem 'sass-rails', '~> 5.0'
 gem 'autoprefixer-rails'

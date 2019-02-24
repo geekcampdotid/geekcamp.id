@@ -3,6 +3,14 @@
 
 = render 'jumbotron'
 = render 'about'
+
+div.lr_embed( style='position: relative; padding-bottom: 50%; height: 0; overflow: hidden; margin: 2rem 0;' )
+  iframe#iframe(
+    src='https://lightroom.adobe.com/embed/shares/19ee171f07bb466bb1c3d48aad2ab4e7/slideshow?background_color=%23FBFBFB&color=%23707070'
+    frameborder='0'
+    style='width:100%; height:100%; position: absolute; top:0; left:0;'
+  )
+
 /= render '2017/schedule'
 /= render 'location'
 /= render '2017/organizers'

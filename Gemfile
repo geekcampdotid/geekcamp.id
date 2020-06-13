@@ -39,7 +39,6 @@ group :development, :test do
 
   gem 'capybara'
   gem 'selenium-webdriver'
-  gem 'capybara-webkit',      github: 'thoughtbot/capybara-webkit'
 end
 
 group :development do

@@ -61,7 +61,7 @@ Capybara.register_driver :chrome do |app|
 end
 
 Capybara.always_include_port = true
-Capybara.default_driver = :chrome
+Capybara.default_driver = ENV['NO_HEADLESS'] ? :chrome : :selenium_chrome_headless
 Capybara.default_max_wait_time = 5
 Capybara.javascript_driver = :chrome
 Capybara.run_server = true

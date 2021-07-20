@@ -1,8 +1,8 @@
 ## README
 
 ### Requirements
-- Ruby: 2.5.1
-- Rails: 5.0.2
+- Ruby: 3.0.2
+- Rails: 6.1.4
 - PostgreSQL
 
 ### Running local server
